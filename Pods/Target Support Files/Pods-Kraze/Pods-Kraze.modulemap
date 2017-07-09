@@ -1,0 +1,6 @@
+framework module Pods_Kraze {
+  umbrella header "Pods-Kraze-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:Kraze/style.json">
+   </FileRef>
+   <FileRef
+      location = "group:SignUpViewViewController.swift">
+   </FileRef>
+   <FileRef
+      location = "absolute:Kraze.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Kraze.xcodeproj">
+   </FileRef>
+</Workspace>

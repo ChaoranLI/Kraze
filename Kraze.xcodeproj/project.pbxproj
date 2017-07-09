@@ -1,0 +1,929 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5A1CCADA1EA10F980058A90E /* style.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A1CCAD91EA10F980058A90E /* style.json */; };
+		5A4AA4701E9B834C0018B727 /* Baron-Neue-Black-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5A4AA46A1E9B834C0018B727 /* Baron-Neue-Black-Italic.otf */; };
+		5A4AA4711E9B834C0018B727 /* Baron-Neue-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5A4AA46B1E9B834C0018B727 /* Baron-Neue-Black.otf */; };
+		5A4AA4721E9B834C0018B727 /* Baron-Neue-Bold-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5A4AA46C1E9B834C0018B727 /* Baron-Neue-Bold-Italic.otf */; };
+		5A4AA4731E9B834C0018B727 /* Baron-Neue-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5A4AA46D1E9B834C0018B727 /* Baron-Neue-Bold.otf */; };
+		5A4AA4741E9B834C0018B727 /* Baron-Neue-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5A4AA46E1E9B834C0018B727 /* Baron-Neue-Italic.otf */; };
+		5A4AA4751E9B834C0018B727 /* Baron-Neue.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5A4AA46F1E9B834C0018B727 /* Baron-Neue.otf */; };
+		5A4EFFE61EE04CF900278D13 /* Annotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4EFFE51EE04CF900278D13 /* Annotation.swift */; };
+		5A4EFFE81EE04D2F00278D13 /* BoundingBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4EFFE71EE04D2F00278D13 /* BoundingBox.swift */; };
+		5A4EFFEA1EE04D5600278D13 /* ClusterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4EFFE91EE04D5600278D13 /* ClusterManager.swift */; };
+		5A4EFFEC1EE04D7300278D13 /* MapMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4EFFEB1EE04D7300278D13 /* MapMarker.swift */; };
+		5A4EFFEE1EE04D8400278D13 /* MapUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4EFFED1EE04D8400278D13 /* MapUtils.swift */; };
+		5A4EFFF01EE04D9C00278D13 /* QuadTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4EFFEF1EE04D9C00278D13 /* QuadTree.swift */; };
+		5A789D991EB214ED00D5B2A6 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A789D981EB214ED00D5B2A6 /* MainVC.swift */; };
+		5A8547AB1F03A3C100EB422A /* Reglages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8547AA1F03A3C100EB422A /* Reglages.swift */; };
+		5AC292DF1E9BB28F00AA0E78 /* Baron-Neue-Black-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5A4AA46A1E9B834C0018B727 /* Baron-Neue-Black-Italic.otf */; };
+		5AC292E01E9BB28F00AA0E78 /* Baron-Neue-Black-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5A4AA46A1E9B834C0018B727 /* Baron-Neue-Black-Italic.otf */; };
+		5AC292E11E9BB29300AA0E78 /* Baron-Neue-Bold-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5A4AA46C1E9B834C0018B727 /* Baron-Neue-Bold-Italic.otf */; };
+		5AC292E21E9BB29400AA0E78 /* Baron-Neue-Bold-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5A4AA46C1E9B834C0018B727 /* Baron-Neue-Bold-Italic.otf */; };
+		5AC292E31E9BB29A00AA0E78 /* Baron-Neue-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5A4AA46D1E9B834C0018B727 /* Baron-Neue-Bold.otf */; };
+		5AC292E41E9BB29B00AA0E78 /* Baron-Neue-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5A4AA46D1E9B834C0018B727 /* Baron-Neue-Bold.otf */; };
+		5AC292E51E9BB2A100AA0E78 /* Baron-Neue.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5A4AA46F1E9B834C0018B727 /* Baron-Neue.otf */; };
+		5AC292E61E9BB2A100AA0E78 /* Baron-Neue.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5A4AA46F1E9B834C0018B727 /* Baron-Neue.otf */; };
+		5AC292EC1E9CE1A500AA0E78 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5AE41F441E97DD060099D348 /* Info.plist */; };
+		5AC292F41E9D186C00AA0E78 /* SignUpViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC292F31E9D186C00AA0E78 /* SignUpViewViewController.swift */; };
+		5AC292F61E9D21A500AA0E78 /* Connect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC292F51E9D21A500AA0E78 /* Connect.swift */; };
+		5AC292FA1E9FC42800AA0E78 /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC292F91E9FC42800AA0E78 /* CheckBox.swift */; };
+		5AC292FC1EA0F6AB00AA0E78 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC292FB1EA0F6AB00AA0E78 /* MapVC.swift */; };
+		5AE41F361E97DD060099D348 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE41F351E97DD060099D348 /* AppDelegate.swift */; };
+		5AE41F381E97DD060099D348 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE41F371E97DD060099D348 /* ViewController.swift */; };
+		5AE41F3B1E97DD060099D348 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AE41F391E97DD060099D348 /* Main.storyboard */; };
+		5AE41F3E1E97DD060099D348 /* Kraze.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5AE41F3C1E97DD060099D348 /* Kraze.xcdatamodeld */; };
+		5AE41F401E97DD060099D348 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AE41F3F1E97DD060099D348 /* Assets.xcassets */; };
+		5AE41F431E97DD060099D348 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AE41F411E97DD060099D348 /* LaunchScreen.storyboard */; };
+		5AE41F4E1E97DD060099D348 /* KrazeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE41F4D1E97DD060099D348 /* KrazeTests.swift */; };
+		5AE41F591E97DD060099D348 /* KrazeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE41F581E97DD060099D348 /* KrazeUITests.swift */; };
+		68E474CC2789C6565D7F1E90 /* Pods_Kraze.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B48FDEBA7F87B5516CB78710 /* Pods_Kraze.framework */; };
+		6BCCB69A9DCD7ABAB22BBD5C /* Pods_KrazeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F025082A25116307C051F71 /* Pods_KrazeUITests.framework */; };
+		7E1949DCEBF04E964D8C273B /* Pods_KrazeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2BC2D6341C70A72146DB568 /* Pods_KrazeTests.framework */; };
+		F93F25581EFD0CE000FCC260 /* UI in Resources */ = {isa = PBXBuildFile; fileRef = F93F25571EFD0CE000FCC260 /* UI */; };
+		F951B3231F0BA05000FEC3B8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F951B3221F0BA05000FEC3B8 /* GoogleService-Info.plist */; };
+		F9EE6C341EE97BB3000A1C67 /* nexa in Resources */ = {isa = PBXBuildFile; fileRef = F9EE6C331EE97BB3000A1C67 /* nexa */; };
+		F9EE6C361EE97BBE000A1C67 /* Baron Neue in Resources */ = {isa = PBXBuildFile; fileRef = F9EE6C351EE97BBE000A1C67 /* Baron Neue */; };
+		F9EE6C3C1EE98B9A000A1C67 /* CGU.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EE6C3B1EE98B9A000A1C67 /* CGU.swift */; };
+		F9FF6A051EF038F800B4A92C /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9FF6A021EF038F800B4A92C /* FBSDKCoreKit.framework */; };
+		F9FF6A061EF038F800B4A92C /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9FF6A031EF038F800B4A92C /* FBSDKLoginKit.framework */; };
+		F9FF6A071EF038F800B4A92C /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9FF6A041EF038F800B4A92C /* FBSDKShareKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5AE41F4A1E97DD060099D348 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5AE41F2A1E97DD060099D348 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5AE41F311E97DD060099D348;
+			remoteInfo = Kraze;
+		};
+		5AE41F551E97DD060099D348 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5AE41F2A1E97DD060099D348 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5AE41F311E97DD060099D348;
+			remoteInfo = Kraze;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2AADD43122E829AA93D0C648 /* Pods-KrazeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KrazeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KrazeUITests/Pods-KrazeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		31E3A6FE1ABD9A4931032FA8 /* Pods-Kraze.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kraze.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kraze/Pods-Kraze.release.xcconfig"; sourceTree = "<group>"; };
+		5A1CCAD91EA10F980058A90E /* style.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = style.json; sourceTree = "<group>"; };
+		5A4AA46A1E9B834C0018B727 /* Baron-Neue-Black-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Baron-Neue-Black-Italic.otf"; path = "Kraze/Baron-Neue-Black-Italic.otf"; sourceTree = SOURCE_ROOT; };
+		5A4AA46B1E9B834C0018B727 /* Baron-Neue-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Baron-Neue-Black.otf"; sourceTree = "<group>"; };
+		5A4AA46C1E9B834C0018B727 /* Baron-Neue-Bold-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Baron-Neue-Bold-Italic.otf"; sourceTree = "<group>"; };
+		5A4AA46D1E9B834C0018B727 /* Baron-Neue-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Baron-Neue-Bold.otf"; sourceTree = "<group>"; };
+		5A4AA46E1E9B834C0018B727 /* Baron-Neue-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Baron-Neue-Italic.otf"; sourceTree = "<group>"; };
+		5A4AA46F1E9B834C0018B727 /* Baron-Neue.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Baron-Neue.otf"; sourceTree = "<group>"; };
+		5A4EFFE51EE04CF900278D13 /* Annotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = Annotation.swift; sourceTree = "<group>"; };
+		5A4EFFE71EE04D2F00278D13 /* BoundingBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoundingBox.swift; sourceTree = "<group>"; };
+		5A4EFFE91EE04D5600278D13 /* ClusterManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClusterManager.swift; sourceTree = "<group>"; };
+		5A4EFFEB1EE04D7300278D13 /* MapMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapMarker.swift; sourceTree = "<group>"; };
+		5A4EFFED1EE04D8400278D13 /* MapUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapUtils.swift; sourceTree = "<group>"; };
+		5A4EFFEF1EE04D9C00278D13 /* QuadTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuadTree.swift; sourceTree = "<group>"; };
+		5A789D981EB214ED00D5B2A6 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		5A8547AA1F03A3C100EB422A /* Reglages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reglages.swift; sourceTree = "<group>"; };
+		5AC292F31E9D186C00AA0E78 /* SignUpViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpViewViewController.swift; path = ../SignUpViewViewController.swift; sourceTree = "<group>"; };
+		5AC292F51E9D21A500AA0E78 /* Connect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connect.swift; sourceTree = "<group>"; usesTabs = 1; };
+		5AC292F91E9FC42800AA0E78 /* CheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
+		5AC292FB1EA0F6AB00AA0E78 /* MapVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; usesTabs = 1; };
+		5AE41F321E97DD060099D348 /* Kraze.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kraze.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AE41F351E97DD060099D348 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; usesTabs = 1; };
+		5AE41F371E97DD060099D348 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5AE41F3A1E97DD060099D348 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5AE41F3D1E97DD060099D348 /* Kraze.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Kraze.xcdatamodel; sourceTree = "<group>"; };
+		5AE41F3F1E97DD060099D348 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5AE41F421E97DD060099D348 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5AE41F441E97DD060099D348 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AE41F491E97DD060099D348 /* KrazeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KrazeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AE41F4D1E97DD060099D348 /* KrazeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KrazeTests.swift; sourceTree = "<group>"; };
+		5AE41F4F1E97DD060099D348 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AE41F541E97DD060099D348 /* KrazeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KrazeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AE41F581E97DD060099D348 /* KrazeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KrazeUITests.swift; sourceTree = "<group>"; };
+		5AE41F5A1E97DD060099D348 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AECF1AD1ED5C11200AE6029 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Bridging-Header.h"; path = "/Users/xtnguyen/Documents/Tristan/KrazeApp/Bridging-Header.h"; sourceTree = "<absolute>"; };
+		65A4668DB9C0A9BAC581969C /* Pods-KrazeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KrazeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KrazeTests/Pods-KrazeTests.release.xcconfig"; sourceTree = "<group>"; };
+		8F025082A25116307C051F71 /* Pods_KrazeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KrazeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B48FDEBA7F87B5516CB78710 /* Pods_Kraze.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kraze.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2BC2D6341C70A72146DB568 /* Pods_KrazeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KrazeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0B59DFC5A47ED6171ACA2F4 /* Pods-KrazeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KrazeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KrazeUITests/Pods-KrazeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F4734EDA0DA492BB9A625238 /* Pods-Kraze.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kraze.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kraze/Pods-Kraze.debug.xcconfig"; sourceTree = "<group>"; };
+		F7243DC951AB35952CEAB0C3 /* Pods-KrazeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KrazeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KrazeTests/Pods-KrazeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F938368F1F0E83B900A05E02 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		F93F25571EFD0CE000FCC260 /* UI */ = {isa = PBXFileReference; lastKnownFileType = folder; path = UI; sourceTree = SOURCE_ROOT; };
+		F951B3221F0BA05000FEC3B8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F984DA471F03EF960045ABA3 /* SF-Pro-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Text-Regular.otf"; path = "../../../../../Library/Fonts/SF-Pro-Text-Regular.otf"; sourceTree = "<group>"; };
+		F9EE6C331EE97BB3000A1C67 /* nexa */ = {isa = PBXFileReference; lastKnownFileType = folder; name = nexa; path = ../../../Downloads/nexa; sourceTree = "<group>"; };
+		F9EE6C351EE97BBE000A1C67 /* Baron Neue */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Baron Neue"; path = "../../../Downloads/Baron Neue"; sourceTree = "<group>"; };
+		F9EE6C3B1EE98B9A000A1C67 /* CGU.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGU.swift; sourceTree = "<group>"; };
+		F9FF6A021EF038F800B4A92C /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = "../../Downloads/FacebookSDKs-iOS-4.23.0 (1)/FBSDKCoreKit.framework"; sourceTree = "<group>"; };
+		F9FF6A031EF038F800B4A92C /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "../../Downloads/FacebookSDKs-iOS-4.23.0 (1)/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
+		F9FF6A041EF038F800B4A92C /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = "../../Downloads/FacebookSDKs-iOS-4.23.0 (1)/FBSDKShareKit.framework"; sourceTree = "<group>"; };
+		F9FF6A0A1EF1680F00B4A92C /* Kraze.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Kraze.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5AE41F2F1E97DD060099D348 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9FF6A071EF038F800B4A92C /* FBSDKShareKit.framework in Frameworks */,
+				68E474CC2789C6565D7F1E90 /* Pods_Kraze.framework in Frameworks */,
+				F9FF6A051EF038F800B4A92C /* FBSDKCoreKit.framework in Frameworks */,
+				F9FF6A061EF038F800B4A92C /* FBSDKLoginKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AE41F461E97DD060099D348 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E1949DCEBF04E964D8C273B /* Pods_KrazeTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AE41F511E97DD060099D348 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BCCB69A9DCD7ABAB22BBD5C /* Pods_KrazeUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1FDB0BCAC9BF8160A1D4AEA5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F4734EDA0DA492BB9A625238 /* Pods-Kraze.debug.xcconfig */,
+				31E3A6FE1ABD9A4931032FA8 /* Pods-Kraze.release.xcconfig */,
+				F7243DC951AB35952CEAB0C3 /* Pods-KrazeTests.debug.xcconfig */,
+				65A4668DB9C0A9BAC581969C /* Pods-KrazeTests.release.xcconfig */,
+				D0B59DFC5A47ED6171ACA2F4 /* Pods-KrazeUITests.debug.xcconfig */,
+				2AADD43122E829AA93D0C648 /* Pods-KrazeUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5A4AA4691E9B83090018B727 /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				F984DA471F03EF960045ABA3 /* SF-Pro-Text-Regular.otf */,
+				F93F25571EFD0CE000FCC260 /* UI */,
+				F9EE6C351EE97BBE000A1C67 /* Baron Neue */,
+				F9EE6C331EE97BB3000A1C67 /* nexa */,
+				5A4AA46A1E9B834C0018B727 /* Baron-Neue-Black-Italic.otf */,
+				5A4AA46B1E9B834C0018B727 /* Baron-Neue-Black.otf */,
+				5A4AA46C1E9B834C0018B727 /* Baron-Neue-Bold-Italic.otf */,
+				5A4AA46D1E9B834C0018B727 /* Baron-Neue-Bold.otf */,
+				5A4AA46E1E9B834C0018B727 /* Baron-Neue-Italic.otf */,
+				5A4AA46F1E9B834C0018B727 /* Baron-Neue.otf */,
+				5AE41F3F1E97DD060099D348 /* Assets.xcassets */,
+			);
+			name = Ressources;
+			sourceTree = "<group>";
+		};
+		5AE41F291E97DD060099D348 = {
+			isa = PBXGroup;
+			children = (
+				F9FF6A021EF038F800B4A92C /* FBSDKCoreKit.framework */,
+				F9FF6A031EF038F800B4A92C /* FBSDKLoginKit.framework */,
+				F9FF6A041EF038F800B4A92C /* FBSDKShareKit.framework */,
+				F96689A21EE6E7C700CC210D /* Google-Maps-iOS-Utils */,
+				5AE41F341E97DD060099D348 /* Kraze */,
+				5AE41F4C1E97DD060099D348 /* KrazeTests */,
+				5AE41F571E97DD060099D348 /* KrazeUITests */,
+				5AE41F331E97DD060099D348 /* Products */,
+				1FDB0BCAC9BF8160A1D4AEA5 /* Pods */,
+				F8C9320FB121A90856F572C8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5AE41F331E97DD060099D348 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5AE41F321E97DD060099D348 /* Kraze.app */,
+				5AE41F491E97DD060099D348 /* KrazeTests.xctest */,
+				5AE41F541E97DD060099D348 /* KrazeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5AE41F341E97DD060099D348 /* Kraze */ = {
+			isa = PBXGroup;
+			children = (
+				F9FF6A0A1EF1680F00B4A92C /* Kraze.entitlements */,
+				F938368F1F0E83B900A05E02 /* Bridging-Header.h */,
+				5AECF1AD1ED5C11200AE6029 /* Bridging-Header.h */,
+				5A1CCAD91EA10F980058A90E /* style.json */,
+				5AC292F31E9D186C00AA0E78 /* SignUpViewViewController.swift */,
+				5AE41F351E97DD060099D348 /* AppDelegate.swift */,
+				5A8547AA1F03A3C100EB422A /* Reglages.swift */,
+				5AE41F371E97DD060099D348 /* ViewController.swift */,
+				5AE41F391E97DD060099D348 /* Main.storyboard */,
+				F9EE6C3B1EE98B9A000A1C67 /* CGU.swift */,
+				5A789D981EB214ED00D5B2A6 /* MainVC.swift */,
+				5A4AA4691E9B83090018B727 /* Ressources */,
+				5AE41F411E97DD060099D348 /* LaunchScreen.storyboard */,
+				5AE41F441E97DD060099D348 /* Info.plist */,
+				F951B3221F0BA05000FEC3B8 /* GoogleService-Info.plist */,
+				5AE41F3C1E97DD060099D348 /* Kraze.xcdatamodeld */,
+				5AC292F51E9D21A500AA0E78 /* Connect.swift */,
+				5AC292F91E9FC42800AA0E78 /* CheckBox.swift */,
+				5AC292FB1EA0F6AB00AA0E78 /* MapVC.swift */,
+				5A4EFFE91EE04D5600278D13 /* ClusterManager.swift */,
+				5A4EFFEB1EE04D7300278D13 /* MapMarker.swift */,
+				5A4EFFED1EE04D8400278D13 /* MapUtils.swift */,
+				5A4EFFEF1EE04D9C00278D13 /* QuadTree.swift */,
+				5A4EFFE51EE04CF900278D13 /* Annotation.swift */,
+				5A4EFFE71EE04D2F00278D13 /* BoundingBox.swift */,
+			);
+			path = Kraze;
+			sourceTree = "<group>";
+		};
+		5AE41F4C1E97DD060099D348 /* KrazeTests */ = {
+			isa = PBXGroup;
+			children = (
+				5AE41F4D1E97DD060099D348 /* KrazeTests.swift */,
+				5AE41F4F1E97DD060099D348 /* Info.plist */,
+			);
+			path = KrazeTests;
+			sourceTree = "<group>";
+		};
+		5AE41F571E97DD060099D348 /* KrazeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5AE41F581E97DD060099D348 /* KrazeUITests.swift */,
+				5AE41F5A1E97DD060099D348 /* Info.plist */,
+			);
+			path = KrazeUITests;
+			sourceTree = "<group>";
+		};
+		F8C9320FB121A90856F572C8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B48FDEBA7F87B5516CB78710 /* Pods_Kraze.framework */,
+				C2BC2D6341C70A72146DB568 /* Pods_KrazeTests.framework */,
+				8F025082A25116307C051F71 /* Pods_KrazeUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F96689A21EE6E7C700CC210D /* Google-Maps-iOS-Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Google-Maps-iOS-Utils";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5AE41F311E97DD060099D348 /* Kraze */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5AE41F5D1E97DD060099D348 /* Build configuration list for PBXNativeTarget "Kraze" */;
+			buildPhases = (
+				0DA2935D968D184F34DDE2E1 /* [CP] Check Pods Manifest.lock */,
+				5AE41F2E1E97DD060099D348 /* Sources */,
+				5AE41F2F1E97DD060099D348 /* Frameworks */,
+				5AE41F301E97DD060099D348 /* Resources */,
+				EA7D44FDFDC35CCF8C17E3A3 /* [CP] Embed Pods Frameworks */,
+				19B9B444E3D44CA853BE5107 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Kraze;
+			productName = Kraze;
+			productReference = 5AE41F321E97DD060099D348 /* Kraze.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5AE41F481E97DD060099D348 /* KrazeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5AE41F601E97DD060099D348 /* Build configuration list for PBXNativeTarget "KrazeTests" */;
+			buildPhases = (
+				95C47E2B89ABBA1DA1CD9B37 /* [CP] Check Pods Manifest.lock */,
+				5AE41F451E97DD060099D348 /* Sources */,
+				5AE41F461E97DD060099D348 /* Frameworks */,
+				5AE41F471E97DD060099D348 /* Resources */,
+				5A57223641AEB7FC1EF767A6 /* [CP] Embed Pods Frameworks */,
+				414A072BB3D694648DCC2035 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5AE41F4B1E97DD060099D348 /* PBXTargetDependency */,
+			);
+			name = KrazeTests;
+			productName = KrazeTests;
+			productReference = 5AE41F491E97DD060099D348 /* KrazeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5AE41F531E97DD060099D348 /* KrazeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5AE41F631E97DD060099D348 /* Build configuration list for PBXNativeTarget "KrazeUITests" */;
+			buildPhases = (
+				442E31FEB068CA0BC03419C1 /* [CP] Check Pods Manifest.lock */,
+				5AE41F501E97DD060099D348 /* Sources */,
+				5AE41F511E97DD060099D348 /* Frameworks */,
+				5AE41F521E97DD060099D348 /* Resources */,
+				AE1BA4CA16F9CB0251D1D0F8 /* [CP] Embed Pods Frameworks */,
+				9CD9EBE4173E45605199B44A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5AE41F561E97DD060099D348 /* PBXTargetDependency */,
+			);
+			name = KrazeUITests;
+			productName = KrazeUITests;
+			productReference = 5AE41F541E97DD060099D348 /* KrazeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5AE41F2A1E97DD060099D348 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Xuan Tung Nguyen";
+				TargetAttributes = {
+					5AE41F311E97DD060099D348 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
+					};
+					5AE41F481E97DD060099D348 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5AE41F311E97DD060099D348;
+					};
+					5AE41F531E97DD060099D348 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5AE41F311E97DD060099D348;
+					};
+				};
+			};
+			buildConfigurationList = 5AE41F2D1E97DD060099D348 /* Build configuration list for PBXProject "Kraze" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5AE41F291E97DD060099D348;
+			productRefGroup = 5AE41F331E97DD060099D348 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5AE41F311E97DD060099D348 /* Kraze */,
+				5AE41F481E97DD060099D348 /* KrazeTests */,
+				5AE41F531E97DD060099D348 /* KrazeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5AE41F301E97DD060099D348 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A1CCADA1EA10F980058A90E /* style.json in Resources */,
+				F9EE6C361EE97BBE000A1C67 /* Baron Neue in Resources */,
+				F951B3231F0BA05000FEC3B8 /* GoogleService-Info.plist in Resources */,
+				5A4AA4701E9B834C0018B727 /* Baron-Neue-Black-Italic.otf in Resources */,
+				5A4AA4741E9B834C0018B727 /* Baron-Neue-Italic.otf in Resources */,
+				5A4AA4731E9B834C0018B727 /* Baron-Neue-Bold.otf in Resources */,
+				5AE41F431E97DD060099D348 /* LaunchScreen.storyboard in Resources */,
+				5AE41F401E97DD060099D348 /* Assets.xcassets in Resources */,
+				F9EE6C341EE97BB3000A1C67 /* nexa in Resources */,
+				5A4AA4721E9B834C0018B727 /* Baron-Neue-Bold-Italic.otf in Resources */,
+				F93F25581EFD0CE000FCC260 /* UI in Resources */,
+				5AE41F3B1E97DD060099D348 /* Main.storyboard in Resources */,
+				5A4AA4711E9B834C0018B727 /* Baron-Neue-Black.otf in Resources */,
+				5AC292EC1E9CE1A500AA0E78 /* Info.plist in Resources */,
+				5A4AA4751E9B834C0018B727 /* Baron-Neue.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AE41F471E97DD060099D348 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AC292E11E9BB29300AA0E78 /* Baron-Neue-Bold-Italic.otf in Resources */,
+				5AC292E51E9BB2A100AA0E78 /* Baron-Neue.otf in Resources */,
+				5AC292DF1E9BB28F00AA0E78 /* Baron-Neue-Black-Italic.otf in Resources */,
+				5AC292E31E9BB29A00AA0E78 /* Baron-Neue-Bold.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AE41F521E97DD060099D348 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AC292E21E9BB29400AA0E78 /* Baron-Neue-Bold-Italic.otf in Resources */,
+				5AC292E61E9BB2A100AA0E78 /* Baron-Neue.otf in Resources */,
+				5AC292E01E9BB28F00AA0E78 /* Baron-Neue-Black-Italic.otf in Resources */,
+				5AC292E41E9BB29B00AA0E78 /* Baron-Neue-Bold.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0DA2935D968D184F34DDE2E1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		19B9B444E3D44CA853BE5107 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Kraze/Pods-Kraze-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		414A072BB3D694648DCC2035 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KrazeTests/Pods-KrazeTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		442E31FEB068CA0BC03419C1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5A57223641AEB7FC1EF767A6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KrazeTests/Pods-KrazeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95C47E2B89ABBA1DA1CD9B37 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9CD9EBE4173E45605199B44A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KrazeUITests/Pods-KrazeUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE1BA4CA16F9CB0251D1D0F8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KrazeUITests/Pods-KrazeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA7D44FDFDC35CCF8C17E3A3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Kraze/Pods-Kraze-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5AE41F2E1E97DD060099D348 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AE41F3E1E97DD060099D348 /* Kraze.xcdatamodeld in Sources */,
+				5A4EFFF01EE04D9C00278D13 /* QuadTree.swift in Sources */,
+				F9EE6C3C1EE98B9A000A1C67 /* CGU.swift in Sources */,
+				5A8547AB1F03A3C100EB422A /* Reglages.swift in Sources */,
+				5A4EFFEC1EE04D7300278D13 /* MapMarker.swift in Sources */,
+				5A4EFFE81EE04D2F00278D13 /* BoundingBox.swift in Sources */,
+				5AC292F41E9D186C00AA0E78 /* SignUpViewViewController.swift in Sources */,
+				5A4EFFEE1EE04D8400278D13 /* MapUtils.swift in Sources */,
+				5AC292FA1E9FC42800AA0E78 /* CheckBox.swift in Sources */,
+				5AE41F381E97DD060099D348 /* ViewController.swift in Sources */,
+				5A4EFFEA1EE04D5600278D13 /* ClusterManager.swift in Sources */,
+				5AC292FC1EA0F6AB00AA0E78 /* MapVC.swift in Sources */,
+				5A4EFFE61EE04CF900278D13 /* Annotation.swift in Sources */,
+				5A789D991EB214ED00D5B2A6 /* MainVC.swift in Sources */,
+				5AE41F361E97DD060099D348 /* AppDelegate.swift in Sources */,
+				5AC292F61E9D21A500AA0E78 /* Connect.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AE41F451E97DD060099D348 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AE41F4E1E97DD060099D348 /* KrazeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AE41F501E97DD060099D348 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AE41F591E97DD060099D348 /* KrazeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5AE41F4B1E97DD060099D348 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5AE41F311E97DD060099D348 /* Kraze */;
+			targetProxy = 5AE41F4A1E97DD060099D348 /* PBXContainerItemProxy */;
+		};
+		5AE41F561E97DD060099D348 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5AE41F311E97DD060099D348 /* Kraze */;
+			targetProxy = 5AE41F551E97DD060099D348 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5AE41F391E97DD060099D348 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5AE41F3A1E97DD060099D348 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5AE41F411E97DD060099D348 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5AE41F421E97DD060099D348 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5AE41F5B1E97DD060099D348 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_DISABLE_SAFETY_CHECKS = YES;
+				SWIFT_INCLUDE_PATHS = "";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/xtnguyen/Documents/KrazeApp/Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_REFLECTION_METADATA_LEVEL = all;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		5AE41F5C1E97DD060099D348 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_DISABLE_SAFETY_CHECKS = YES;
+				SWIFT_INCLUDE_PATHS = "";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/xtnguyen/Documents/KrazeApp/Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_REFLECTION_METADATA_LEVEL = all;
+				SWIFT_VERSION = 3.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5AE41F5E1E97DD060099D348 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4734EDA0DA492BB9A625238 /* Pods-Kraze.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Kraze/Kraze.entitlements;
+				DEVELOPMENT_TEAM = Y5342BDMVJ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Kraze/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				NEW_SETTING = "";
+				PRODUCT_BUNDLE_IDENTIFIER = kraze.Kraze;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "./Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		5AE41F5F1E97DD060099D348 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31E3A6FE1ABD9A4931032FA8 /* Pods-Kraze.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Kraze/Kraze.entitlements;
+				DEVELOPMENT_TEAM = Y5342BDMVJ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "~/Documents/FacebookSDK";
+				INFOPLIST_FILE = Kraze/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				NEW_SETTING = "";
+				PRODUCT_BUNDLE_IDENTIFIER = kraze.Kraze;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "./Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		5AE41F611E97DD060099D348 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7243DC951AB35952CEAB0C3 /* Pods-KrazeTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = KrazeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kraze.KrazeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kraze.app/Kraze";
+			};
+			name = Debug;
+		};
+		5AE41F621E97DD060099D348 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65A4668DB9C0A9BAC581969C /* Pods-KrazeTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = KrazeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kraze.KrazeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kraze.app/Kraze";
+			};
+			name = Release;
+		};
+		5AE41F641E97DD060099D348 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0B59DFC5A47ED6171ACA2F4 /* Pods-KrazeUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = KrazeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kraze.KrazeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Kraze;
+			};
+			name = Debug;
+		};
+		5AE41F651E97DD060099D348 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2AADD43122E829AA93D0C648 /* Pods-KrazeUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = KrazeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kraze.KrazeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Kraze;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5AE41F2D1E97DD060099D348 /* Build configuration list for PBXProject "Kraze" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AE41F5B1E97DD060099D348 /* Debug */,
+				5AE41F5C1E97DD060099D348 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5AE41F5D1E97DD060099D348 /* Build configuration list for PBXNativeTarget "Kraze" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AE41F5E1E97DD060099D348 /* Debug */,
+				5AE41F5F1E97DD060099D348 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5AE41F601E97DD060099D348 /* Build configuration list for PBXNativeTarget "KrazeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AE41F611E97DD060099D348 /* Debug */,
+				5AE41F621E97DD060099D348 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5AE41F631E97DD060099D348 /* Build configuration list for PBXNativeTarget "KrazeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AE41F641E97DD060099D348 /* Debug */,
+				5AE41F651E97DD060099D348 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5AE41F3C1E97DD060099D348 /* Kraze.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5AE41F3D1E97DD060099D348 /* Kraze.xcdatamodel */,
+			);
+			currentVersion = 5AE41F3D1E97DD060099D348 /* Kraze.xcdatamodel */;
+			path = Kraze.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 5AE41F2A1E97DD060099D348 /* Project object */;
+}
