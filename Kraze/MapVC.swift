@@ -9,10 +9,11 @@
 import UIKit
 import GoogleMaps
 import Firebase
+import FirebaseStorage
 import FBSDKLoginKit
 import FBSDKCoreKit
 
-class MapVC: UIViewController{
+class MapVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate{
 	
     @IBOutlet weak var retour: UIButton!
 	fileprivate var markerArray = [MapMarker]()
@@ -21,8 +22,36 @@ class MapVC: UIViewController{
     override var preferredStatusBarStyle: UIStatusBarStyle{
         return .lightContent
     }
-    
 
+	let changeImage: UIButton = {
+		let changeimage = UIButton(frame:CGRect(x: 150, y: 20, width: 30, height: 30))
+		let userCurrent = Auth.auth().currentUser
+		let uid = userCurrent?.uid
+		let ref: DatabaseReference!
+		ref = Database.database().reference(fromURL: "https://kraze-935a0.firebaseio.com/")
+		ref.child("users").child(uid!).observeSingleEvent(of: .value, with: { (snapshot) in
+			let value = snapshot.value as? NSDictionary
+			let url = value?["profileImageUrl"] as? String
+			if url != nil{
+				print("URL is not  null")
+				print(url)
+				let Url = URL(string : url!)
+				URLSession.shared.dataTask(with: Url!, completionHandler: { (data, respons, error) in
+					if error != nil{
+						print(error)
+						return
+					}
+					changeimage.setImage(UIImage(data: data!), for: .normal)
+				}).resume()
+			}else{
+				print("URL is null")
+				changeimage.setImage(UIImage(named: "images"), for: .normal)
+			}
+		})
+		//changeimage.setImage(UIImage(named: "images"), for: .normal)
+		changeimage.addTarget(self, action: #selector(handleSelectProfileImageView), for: .touchUpInside)
+		return changeimage
+	}()
 	override func loadView() {
 		
         let camera = GMSCameraPosition.camera(withLatitude:48.86, longitude:2.34, zoom: 14.0)
@@ -48,11 +77,9 @@ class MapVC: UIViewController{
 		button.addTarget(self, action: #selector(returnAction), for: .touchUpInside)
 		self.view.addSubview(button)
 		
+		/*
 		let profil = UIButton(frame:CGRect(x: 50, y: 20, width: 30, height: 30))
 		//profil.setImage(UIImage(named: "images"), for: .normal)
-		profil.addTarget(self, action: #selector(returnProfile), for: .touchUpInside)
-		self.view.addSubview(profil)
-		
 		var ref: DatabaseReference!
 		ref = Database.database().reference()
 		let user = Auth.auth().currentUser
@@ -68,9 +95,11 @@ class MapVC: UIViewController{
 		}){ (error) in
 			print(error.localizedDescription)
 		}
+		profil.addTarget(self, action: #selector(returnProfile), for: .touchUpInside)
+		self.view.addSubview(profil)
+		*/
 		
-		
-		
+		self.view.addSubview(changeImage)
 		
 		let marker = GMSMarker()
 		let markerImage = UIImage(named: "clubmarker")
@@ -188,11 +217,66 @@ class MapVC: UIViewController{
 		performSegue(withIdentifier: "logout", sender: self)
 	}
 	
-	func returnProfile(sender: UIButton!) {
-		
+	/*func returnProfile(sender: UIButton!) {
+		performSegue(withIdentifier: "seguetoReglage", sender: self)
+	}*/
+	func returnProfile(sender: UIButton!){
 	}
-
-
+	func handleSelectProfileImageView(){
+		let picker = UIImagePickerController()
+		picker.delegate = self
+		picker.allowsEditing = true
+		present(picker, animated: true, completion: nil)
+	}
+	func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+		var selectedImageFromPicker: UIImage?
+		if let editedImage = info["UIImagePickerControllerEditedImage"] as? UIImage{
+			selectedImageFromPicker = editedImage
+		}else if let originalImage = info["UIImagePickerControllerOriginalImage"] as? UIImage{
+			selectedImageFromPicker = originalImage
+		}
+		
+		if let selectedImage = selectedImageFromPicker{
+			changeImage.setImage(selectedImage, for: .normal)
+		}
+		let imageName = NSUUID().uuidString
+		let storageRef = Storage.storage().reference().child("\(imageName).png")
+		if let uploadData = UIImagePNGRepresentation(selectedImageFromPicker!){
+			storageRef.putData(uploadData, metadata: nil, completion: { (metadata, error) in
+				if error != nil {
+					print(error)
+					return
+				}
+				if let profileImageUrl = metadata?.downloadURL()?.absoluteString{
+					let values = ["profileImageUrl": profileImageUrl]
+					self.registerUserIntoDatabase(values: values as [String : AnyObject])
+				}
+			})
+		}
+		dismiss(animated: true, completion: nil)
+	}
+	
+	private func registerUserIntoDatabase(values: [String: AnyObject]){
+		let userCurrent = Auth.auth().currentUser
+		guard let uid = userCurrent?.uid else{
+			return
+		}
+		let ref: DatabaseReference!
+		ref = Database.database().reference(fromURL: "https://kraze-935a0.firebaseio.com/")
+		let usersReference = ref.child("users").child(uid)
+		usersReference.updateChildValues(values, withCompletionBlock: { (err, ref) in
+			if err != nil{
+				print(err)
+				return
+			}
+			print("Saved user successfully into Firebase db")
+		})
+	}
+	
+	func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+		dismiss(animated: true, completion: nil)
+	}
+	
 		//override
 	/*	override func didReceiveMemoryWarning() {
         didReceiveMemoryWarning()

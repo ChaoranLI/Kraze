@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Baron-Neue.otf">
+        <array key="Baron Neue.otf">
             <string>BaronNeue</string>
         </array>
         <array key="SF-Pro-Text-Regular.otf">
@@ -74,16 +74,6 @@
                                 <state key="normal" image="nexticon"/>
                                 <connections>
                                     <action selector="userLoginTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="COL-Um-Q0J"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ur7-nu-84c">
-                                <rect key="frame" x="164" y="554" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="POST">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="confirmBDD:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aQD-dq-d71"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Locker" translatesAutoresizingMaskIntoConstraints="NO" id="eLe-90-sin">
@@ -313,16 +303,6 @@
                                     <action selector="registerButtonClicked:" destination="ojn-Zf-X2a" eventType="touchUpInside" id="Arc-hR-UZq"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Bf-s3-CBL">
-                                <rect key="frame" x="299" y="617" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="POST">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="Afficher:" destination="ojn-Zf-X2a" eventType="touchUpInside" id="Lct-St-6mT"/>
-                                </connections>
-                            </button>
                             <navigationBar contentMode="scaleAspectFit" fixedFrame="YES" barStyle="blackTranslucent" backIndicatorImage="Previous" translatesAutoresizingMaskIntoConstraints="NO" id="gYO-nK-6oi">
                                 <rect key="frame" x="0.0" y="7" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -484,6 +464,7 @@
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="logout" id="UPp-g9-94x"/>
+                        <segue destination="x5A-eK-AWj" kind="show" identifier="seguetoReglage" id="qAV-7X-CHR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QGx-rr-Q5n" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -507,9 +488,10 @@
         <image name="signupDone" width="667" height="375"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Oah-nU-Lqu"/>
-        <segue reference="De9-96-zTR"/>
+        <segue reference="UPp-g9-94x"/>
         <segue reference="Vyz-Oo-Ycx"/>
+        <segue reference="qAV-7X-CHR"/>
+        <segue reference="Oah-nU-Lqu"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
 </document>
