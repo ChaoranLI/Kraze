@@ -214,13 +214,9 @@ class MapVC: UIViewController, UIImagePickerControllerDelegate, UINavigationCont
 		} catch let logoutError{
 			print(logoutError)
 		}
+		let loginManager =  FBSDKLoginManager()
+		loginManager.logOut()
 		performSegue(withIdentifier: "logout", sender: self)
-	}
-	
-	/*func returnProfile(sender: UIButton!) {
-		performSegue(withIdentifier: "seguetoReglage", sender: self)
-	}*/
-	func returnProfile(sender: UIButton!){
 	}
 	func handleSelectProfileImageView(){
 		let picker = UIImagePickerController()

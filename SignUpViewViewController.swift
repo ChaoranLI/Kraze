@@ -17,31 +17,33 @@ import FirebaseAuth
         //FBSDKLoginButtonDelegate
 class SignUpViewViewController: UIViewController, UITextFieldDelegate, FBSDKLoginButtonDelegate{
     // variable in the inscription scene
+    @IBOutlet weak var facebookLogin: FBSDKLoginButton!
+    @IBOutlet weak var ScrollView: UIScrollView!
     @IBOutlet weak var UserFirstName: UITextField!
     @IBOutlet weak var userLastName: UITextField!
     @IBOutlet weak var userEmail: UITextField!
     @IBOutlet weak var userPassword: UITextField!
     @IBOutlet weak var userPasswordConfirm: UITextField!
     // variable in the main scene
-    @IBOutlet weak var userLoginEmail: UITextField!
-    @IBOutlet weak var userLoginPassword: UITextField!
-    
+    //@IBOutlet weak var userLoginEmail: UITextField!
+    //@IBOutlet weak var userLoginPassword: UITextField!
     @IBOutlet weak var Navigation: UINavigationBar!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         //set facebook login button
         
-        let loginbutton = FBSDKLoginButton()
+        /*let loginbutton = FBSDKLoginButton()
         loginbutton.frame = CGRect(x: 130, y: 200, width: 100, height: 30)
         view.addSubview(loginbutton)
         loginbutton.delegate = self
-        loginbutton.readPermissions = ["email", "public_profile"]
-        
-        
+        loginbutton.readPermissions = ["email", "public_profile"]*/
+        let facebookLogin = self.facebookLogin
+        facebookLogin?.delegate = self
+        facebookLogin?.readPermissions = ["email", "public_profile"]
         
         //set attributes for textfield of Main scene
-        let userLoginEmail = self.userLoginEmail
+        /*let userLoginEmail = self.userLoginEmail
         let userLoginPassword = self.userLoginPassword
         userLoginEmail?.attributedPlaceholder = NSAttributedString(string: "Email", attributes: [
             NSForegroundColorAttributeName : UIColor.white,
@@ -52,7 +54,7 @@ class SignUpViewViewController: UIViewController, UITextFieldDelegate, FBSDKLogi
             NSForegroundColorAttributeName : UIColor.white,
             NSFontAttributeName: UIFont.systemFont(ofSize: 14)
             ])
-        userLoginPassword?.textColor = UIColor.white
+        userLoginPassword?.textColor = UIColor.white*/
         
         //set attributes for textfield of Inscription scene
         let UserFirstName = self.UserFirstName
@@ -87,7 +89,7 @@ class SignUpViewViewController: UIViewController, UITextFieldDelegate, FBSDKLogi
         userPasswordConfirm?.textColor = UIColor.white
         
         // set color of clear button
-        if let clearButton = userLoginEmail?.value(forKey: "_clearButton") as? UIButton {
+        /*if let clearButton = userLoginEmail?.value(forKey: "_clearButton") as? UIButton {
             // Create a template copy of the original button image
             let templateImage =  clearButton.imageView?.image?.withRenderingMode(.alwaysTemplate)
             // Set the template image copy as the button image
@@ -104,7 +106,7 @@ class SignUpViewViewController: UIViewController, UITextFieldDelegate, FBSDKLogi
             clearButton.setImage(templateImage, for: .highlighted)
             // Finally, set the image color
             clearButton.tintColor = .white
-        }
+        }*/
         if let clearButton = userEmail?.value(forKey: "_clearButton") as? UIButton {
             // Create a template copy of the original button image
             let templateImage =  clearButton.imageView?.image?.withRenderingMode(.alwaysTemplate)
@@ -134,8 +136,8 @@ class SignUpViewViewController: UIViewController, UITextFieldDelegate, FBSDKLogi
         }
         
         //set delegate for UItext
-        userLoginEmail?.delegate = self
-        userLoginPassword?.delegate = self
+        /*userLoginEmail?.delegate = self
+        userLoginPassword?.delegate = self*/
         UserFirstName?.delegate = self
         userLastName?.delegate = self
         userEmail?.delegate = self
@@ -151,7 +153,8 @@ class SignUpViewViewController: UIViewController, UITextFieldDelegate, FBSDKLogi
         return true
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.view.endEditing(true)
+        //self.view.endEditing(true)
+        self.ScrollView.endEditing(true)
     }
     
     //configurate navigation bar
@@ -260,7 +263,7 @@ class SignUpViewViewController: UIViewController, UITextFieldDelegate, FBSDKLogi
     }
     
     // In the main scene, button login(firebase)
-    @IBAction func userLoginTapped(_ sender: Any) {
+    /*@IBAction func userLoginTapped(_ sender: Any) {
         let userLoginEmail = self.userLoginEmail.text
         let userLoginPassword = self.userLoginPassword.text
         Auth.auth().signIn(withEmail: userLoginEmail!, password: userLoginPassword!) { (user, error) in
@@ -272,7 +275,7 @@ class SignUpViewViewController: UIViewController, UITextFieldDelegate, FBSDKLogi
             self.performSegue(withIdentifier: "segueConnecter", sender: self)
             }
         }
-    }
+    }*/
     //  match for email/password
     struct MyRegex {
         let regex: NSRegularExpression?
@@ -318,7 +321,6 @@ class SignUpViewViewController: UIViewController, UITextFieldDelegate, FBSDKLogi
             print(error)
         }
         showInformation()
-        
     }
     
     func showInformation(){
@@ -361,8 +363,14 @@ class SignUpViewViewController: UIViewController, UITextFieldDelegate, FBSDKLogi
                 
             })
         }
-        
-        
+    }
+    func textFieldDidBeginEditing(_ textField: UITextField){
+        if (textField == userEmail){
+        ScrollView.setContentOffset(CGPoint(x:0,y:150), animated: true)
+        }
+    }
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        ScrollView.setContentOffset(CGPoint(x:0,y:0), animated: true)
     }
     
     /*
