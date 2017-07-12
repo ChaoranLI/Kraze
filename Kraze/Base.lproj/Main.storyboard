@@ -98,6 +98,11 @@
                                     <segue destination="ojn-Zf-X2a" kind="show" id="Oah-nU-Lqu"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kV4-3O-pey" customClass="FBSDKLoginButton">
+                                <rect key="frame" x="137" y="209" width="100" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="button"/>
+                            </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Vkb-Ab-nSy">
                                 <rect key="frame" x="99" y="289" width="176" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
@@ -111,6 +116,7 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="667"/>
                     <connections>
+                        <outlet property="FacebookLogin" destination="kV4-3O-pey" id="fUn-o9-Zvf"/>
                         <outlet property="userLoginEmail" destination="Vkb-Ab-nSy" id="etF-T2-nxl"/>
                         <outlet property="userLoginPassword" destination="Xiz-Jh-J3E" id="C8M-Xj-vZd"/>
                         <segue destination="CO8-aV-oQo" kind="show" identifier="segueConnecter" id="Vyz-Oo-Ycx"/>
