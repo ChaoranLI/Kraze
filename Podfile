@@ -15,9 +15,7 @@ pod 'Firebase/Core'
 pod 'Firebase/Auth'
 pod 'Firebase/Database'
 pod 'Firebase/Storage'
-pod 'SwiftKeychainWrapper'
-pod 'Alamofire', '~> 4.3'
-  target 'KrazeTests' do
+target 'KrazeTests' do
     inherit! :search_paths
     # Pods for testing
   end

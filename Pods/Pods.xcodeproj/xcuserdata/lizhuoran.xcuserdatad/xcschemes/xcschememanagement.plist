@@ -4,11 +4,6 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Alamofire.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Bolts.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -69,7 +64,7 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>SwiftKeychainWrapper.xcscheme</key>
+		<key>nanopb.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -82,22 +77,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>304A788A65D3102E7C5745E577C8A573</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>332F91393FB1DE033D370B4CEDDD5FCF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>40D850A88B2C670EFB2BDBB1B03C9B42</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>40FDBBE9971B8164794AAE36488EE085</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -122,11 +107,6 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>88E9EC28B8B46C3631E6B242B50F4442</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>9848EC1B4E4D261FFB45E6FDD5F86110</key>
 		<dict>
 			<key>primary</key>
@@ -137,12 +117,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>B462904E1483E7B92D5A54FDAA63F774</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>C052BEBFBD0AB5218CC64BA3450F6547</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>DDBCFDE490CDFDABF6F16A26F346932D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E4DD95323C54A78F879DAB0F1508B8E7</key>
 		<dict>
 			<key>primary</key>
 			<true/>

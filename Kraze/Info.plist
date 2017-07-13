@@ -2,34 +2,46 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleDisplayName</key>
+	<string>Kraze</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
 	<key>CFBundleName</key>
 	<string>$(PRODUCT_NAME)</string>
-	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
-	<key>CFBundleVersion</key>
-	<string>1</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
-	<key>UILaunchStoryboardName</key>
-	<string>LaunchScreen</string>
-	<key>LSApplicationQueriesSchemes</key>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+    <key>CFBundleURLTypes</key>
+    <array>
+        <dict>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>fb1823241754597277</string>
+            </array>
+        </dict>
+	</array>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+    <key>FacebookAppID</key>
+    <string>1823241754597277</string>
+    <key>FacebookDisplayName</key>
+    <string>Kraze</string>
+    <key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>googlechromes</string>
 		<string>comgooglemaps</string>
 		<string>fbapi</string>
 		<string>fbauth2</string>
 	</array>
-	<key>CFBundleDevelopmentRegion</key>
-	<string>en</string>
-	<key>UIStatusBarStyle</key>
-	<string>UIStatusBarStyleLightContent</string>
-	<key>UIMainStoryboardFile</key>
-	<string>Main</string>
-	<key>NSLocationWhenInUseUsageDescription
-</key>
-	<string></string>
-	<key>FacebookAppID</key>
-	<string>1687164004913264</string>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSExceptionDomains</key>
@@ -41,28 +53,9 @@
 			</dict>
 		</dict>
 	</dict>
-	<key>CFBundleInfoDictionaryVersion</key>
-	<string>6.0</string>
-	<key>CFBundleExecutable</key>
-	<string>$(EXECUTABLE_NAME)</string>
-	<key>UIRequiredDeviceCapabilities</key>
-	<array>
-		<string>armv7</string>
-	</array>
-	<key>FacebookDisplayName</key>
-	<string>Kraze</string>
-	<key>CFBundleURLTypes</key>
-	<array>
-		<dict>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>fb1687164004913264</string>
-			</array>
-		</dict>
-	</array>
-	<key>CFBundleIdentifier</key>
-	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
-	<key>UIAppFonts</key>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>$(Kraze) location use.</string>
+    <key>UIAppFonts</key>
 	<array>
 		<string>Baron-Neue-Black-Italic.otf</string>
 		<string>Baron-Neue-Black.otf</string>
@@ -71,17 +64,21 @@
 		<string>Baron-Neue-Italic.otf</string>
 		<string>Baron-Neue.otf</string>
 	</array>
-	<key>LSRequiresIPhoneOS</key>
-	<true/>
-	<key>CFBundleDisplayName</key>
-	<string>Kraze</string>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
+	<key>UIMainStoryboardFile</key>
+	<string>Main</string>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>armv7</string>
+	</array>
+	<key>UIStatusBarStyle</key>
+	<string>UIStatusBarStyleLightContent</string>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>$(PRODUCT_NAME) uses photos</string>
 </dict>
 </plist>

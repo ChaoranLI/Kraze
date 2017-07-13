@@ -9,49 +9,26 @@
 import UIKit
 import GoogleMaps
 import Firebase
-import FirebaseStorage
 import FBSDKLoginKit
 import FBSDKCoreKit
 
-class MapVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate{
+class MapVC: UIViewController{
 	
     @IBOutlet weak var retour: UIButton!
 	fileprivate var markerArray = [MapMarker]()
 	fileprivate let mapUtils = MapUtils()
 	//afficher le nom d'opérateur,le temps,la batterie
     override var preferredStatusBarStyle: UIStatusBarStyle{
-        return .lightContent
+        return .default
+	
+	
+		
     }
+	
+	func openSettings(sender: AnyObject) {
+		performSegue(withIdentifier: "toSettings", sender: nil)
+	}
 
-	let changeImage: UIButton = {
-		let changeimage = UIButton(frame:CGRect(x: 150, y: 20, width: 30, height: 30))
-		let userCurrent = Auth.auth().currentUser
-		let uid = userCurrent?.uid
-		let ref: DatabaseReference!
-		ref = Database.database().reference(fromURL: "https://kraze-935a0.firebaseio.com/")
-		ref.child("users").child(uid!).observeSingleEvent(of: .value, with: { (snapshot) in
-			let value = snapshot.value as? NSDictionary
-			let url = value?["profileImageUrl"] as? String
-			if url != nil{
-				print("URL is not  null")
-				print(url)
-				let Url = URL(string : url!)
-				URLSession.shared.dataTask(with: Url!, completionHandler: { (data, respons, error) in
-					if error != nil{
-						print(error)
-						return
-					}
-					changeimage.setImage(UIImage(data: data!), for: .normal)
-				}).resume()
-			}else{
-				print("URL is null")
-				changeimage.setImage(UIImage(named: "images"), for: .normal)
-			}
-		})
-		//changeimage.setImage(UIImage(named: "images"), for: .normal)
-		changeimage.addTarget(self, action: #selector(handleSelectProfileImageView), for: .touchUpInside)
-		return changeimage
-	}()
 	override func loadView() {
 		
         let camera = GMSCameraPosition.camera(withLatitude:48.86, longitude:2.34, zoom: 14.0)
@@ -72,22 +49,35 @@ class MapVC: UIViewController, UIImagePickerControllerDelegate, UINavigationCont
         }
         self.view = mapView
 		
-		let button = UIButton(frame:CGRect(x: 0, y: 20, width: 30, height: 30))
-		button.setImage(UIImage(named: "images"), for: .normal)
-		button.addTarget(self, action: #selector(returnAction), for: .touchUpInside)
-		self.view.addSubview(button)
 		
-		/*
-		let profil = UIButton(frame:CGRect(x: 50, y: 20, width: 30, height: 30))
+	//	let profilebutton = UIButton(frame:CGRect(x: 0, y: 20, width: 30, height: 30))
+	//	profilebutton.setImage(UIImage(named: "images"), for: .normal)
+	//	profilebutton.addTarget(self, action: #selector(returnAction), for: .touchUpInside)
+	//	self.view.addSubview(profilebutton)
+		
+		
+		
+		let profil = UIButton(frame:CGRect(x: 10, y: 40, width: 60, height: 60))
 		//profil.setImage(UIImage(named: "images"), for: .normal)
+		profil.layer.cornerRadius = 0.5 * profil.bounds.size.width
+		profil.clipsToBounds = true
+		profil.addTarget(self, action: #selector(openSettings(sender:)), for: .touchUpInside)
+		self.view.addSubview(profil)
+		
+		
+		
+		
+		//Recover Facebook Image
+		
 		var ref: DatabaseReference!
 		ref = Database.database().reference()
 		let user = Auth.auth().currentUser
-		print(user?.uid)
+		print(user!.uid)
 		ref.child("FacebookUsers").child((user?.uid)!).observeSingleEvent(of: .value, with: { (snapshot) in
 			// Get user value
-			let value = snapshot.value as! NSDictionary
+			guard let value = snapshot.value as? [String: String] else { return }
 			print(value)
+			print(type(of: value))
 			let id = value["id"] as! String
 			let url = NSURL(string: "https://graph.facebook.com/\(id)/picture?type=large&return_ssl_resources=1")
 			let data = NSData(contentsOf:url! as URL)
@@ -95,15 +85,26 @@ class MapVC: UIViewController, UIImagePickerControllerDelegate, UINavigationCont
 		}){ (error) in
 			print(error.localizedDescription)
 		}
-		profil.addTarget(self, action: #selector(returnProfile), for: .touchUpInside)
-		self.view.addSubview(profil)
-		*/
 		
-		self.view.addSubview(changeImage)
+		//Trouver les infors clubs
+		ref.child("Clubs").observe(.value, with: { (snapshot) in
+			for child in snapshot.children{
+				let snap = child as! DataSnapshot
+				let value = snap.value as? [String: Any]
+				print(value)
+				let latitude = value?["Latitude "] as? Double
+				print(latitude)
+				
+			}
+		}){ (error) in
+			print(error.localizedDescription)
+		}
+		
 		
 		let marker = GMSMarker()
-		let markerImage = UIImage(named: "clubmarker")
-		let markerView = UIImageView(image: markerImage)
+		//let markerView = UIImageView(image: #imageLiteral(resourceName: "clubmarker"))
+		let markerViewImage = UIImage(named: "clubmarker")
+		let makerview = UIImageView(image: markerViewImage)
 		
 	
 		
@@ -169,6 +170,7 @@ class MapVC: UIViewController, UIImagePickerControllerDelegate, UINavigationCont
 			let club_marker = GMSMarker()
 			let clubimage = UIImage(named: "clubmarker")!.withRenderingMode(.alwaysTemplate)
 			let markerView = UIImageView(image: clubimage)
+			markerView.frame = CGRect(x: 0, y: 0, width: 40, height: 60)
     
 			club_marker.position = CLLocationCoordinate2D(latitude: club.lat, longitude: club.long)
 			club_marker.title = club.name
@@ -188,21 +190,10 @@ class MapVC: UIViewController, UIImagePickerControllerDelegate, UINavigationCont
 			}
 		}
 		
-		/*extension ViewController: GMSMapViewDelegate
-		{
-			func mapView(_ mapView: GMSMapView!, idleAt position: GMSCameraPosition!)
-			{
-				mapUtils.mainQueue.cancelAllOperations()
-				mapUtils.backgroundQueue.cancelAllOperations()
-				
-				if let visibleMap = self.view as? GMSMapView {
-					mapUtils.generateQuadTreeWithMarkers(markerArray, forVisibleArea: visibleMap)
-				}
-			}*/
 		
 	}
 		
-	func mapView(_ mapView: GMSMapView!, didTap marker: GMSMarker!) -> Bool
+	func mapView(_ mapView: GMSMapView, didTap marker: GMSMarker) -> Bool
 	{
 		mapView.selectedMarker = marker
 		return true
@@ -214,65 +205,15 @@ class MapVC: UIViewController, UIImagePickerControllerDelegate, UINavigationCont
 		} catch let logoutError{
 			print(logoutError)
 		}
-		let loginManager =  FBSDKLoginManager()
-		loginManager.logOut()
 		performSegue(withIdentifier: "logout", sender: self)
 	}
-	func handleSelectProfileImageView(){
-		let picker = UIImagePickerController()
-		picker.delegate = self
-		picker.allowsEditing = true
-		present(picker, animated: true, completion: nil)
-	}
-	func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-		var selectedImageFromPicker: UIImage?
-		if let editedImage = info["UIImagePickerControllerEditedImage"] as? UIImage{
-			selectedImageFromPicker = editedImage
-		}else if let originalImage = info["UIImagePickerControllerOriginalImage"] as? UIImage{
-			selectedImageFromPicker = originalImage
-		}
+	
+	func returnProfile(sender: UIButton!) {
 		
-		if let selectedImage = selectedImageFromPicker{
-			changeImage.setImage(selectedImage, for: .normal)
-		}
-		let imageName = NSUUID().uuidString
-		let storageRef = Storage.storage().reference().child("\(imageName).png")
-		if let uploadData = UIImagePNGRepresentation(selectedImageFromPicker!){
-			storageRef.putData(uploadData, metadata: nil, completion: { (metadata, error) in
-				if error != nil {
-					print(error)
-					return
-				}
-				if let profileImageUrl = metadata?.downloadURL()?.absoluteString{
-					let values = ["profileImageUrl": profileImageUrl]
-					self.registerUserIntoDatabase(values: values as [String : AnyObject])
-				}
-			})
-		}
-		dismiss(animated: true, completion: nil)
 	}
 	
-	private func registerUserIntoDatabase(values: [String: AnyObject]){
-		let userCurrent = Auth.auth().currentUser
-		guard let uid = userCurrent?.uid else{
-			return
-		}
-		let ref: DatabaseReference!
-		ref = Database.database().reference(fromURL: "https://kraze-935a0.firebaseio.com/")
-		let usersReference = ref.child("users").child(uid)
-		usersReference.updateChildValues(values, withCompletionBlock: { (err, ref) in
-			if err != nil{
-				print(err)
-				return
-			}
-			print("Saved user successfully into Firebase db")
-		})
-	}
-	
-	func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
-		dismiss(animated: true, completion: nil)
-	}
-	
+
+
 		//override
 	/*	override func didReceiveMemoryWarning() {
         didReceiveMemoryWarning()
@@ -290,3 +231,14 @@ class MapVC: UIViewController, UIImagePickerControllerDelegate, UINavigationCont
     }
     */
 }
+extension MapVC: GMSMapViewDelegate
+{
+	func mapView(_ mapView: GMSMapView, idleAt position: GMSCameraPosition)
+	{
+		mapUtils.mainQueue.cancelAllOperations()
+		mapUtils.backgroundQueue.cancelAllOperations()
+		
+		if let visibleMap = self.view as? GMSMapView {
+			mapUtils.generateQuadTreeWithMarkers(markerArray, forVisibleArea: visibleMap)
+		}
+	}}

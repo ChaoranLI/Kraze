@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SignUpViewViewController.swift"
-            timestampString = "514733270.114023"
+            timestampString = "521476810.421201"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
             landmarkName = "SignUpViewViewController"
             landmarkType = "3">
          </BreakpointContent>
@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SignUpViewViewController.swift"
-            timestampString = "514733270.114023"
+            timestampString = "521476810.421201"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
             landmarkName = "SignUpViewViewController"
             landmarkType = "3">
             <Locations>
@@ -54,31 +54,61 @@
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "Kraze.SignUpViewViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; Kraze.SignUpViewViewController"
+                  symbolName = "Kraze.SignUpViewViewController.userEmail.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UITextField&gt;"
                   moduleName = "Kraze"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xtnguyen/Documents/Tristan/KrazeApp/SignUpViewViewController.swift"
-                  timestampString = "520270272.229682"
+                  urlString = "file:///Users/xtnguyen/Documents/Kraze/Kraze_v1.1/SignUpViewViewController.swift"
+                  timestampString = "521631370.525278"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "22"
-                  endingLineNumber = "22"
-                  offsetFromSymbolStart = "128">
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "27">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "function signature specialization &lt;Arg[0] = Owned To Guaranteed&gt; of Kraze.SignUpViewViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;Kraze.SignUpViewViewController&gt;"
+                  symbolName = "Kraze.SignUpViewViewController.userEmail.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UITextField&gt;"
                   moduleName = "Kraze"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xtnguyen/Documents/Tristan/KrazeApp/SignUpViewViewController.swift"
-                  timestampString = "520270272.23678"
+                  urlString = "file:///Users/xtnguyen/Documents/Kraze/Kraze_v1.1/SignUpViewViewController.swift"
+                  timestampString = "521631370.527277"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "22"
-                  endingLineNumber = "22"
-                  offsetFromSymbolStart = "92">
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "42">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Kraze.SignUpViewViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; Kraze.SignUpViewViewController"
+                  moduleName = "Kraze"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xtnguyen/Documents/Kraze/Kraze_v1.1/SignUpViewViewController.swift"
+                  timestampString = "521631370.528958"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "233">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Kraze.SignUpViewViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;Kraze.SignUpViewViewController&gt;"
+                  moduleName = "Kraze"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xtnguyen/Documents/Kraze/Kraze_v1.1/SignUpViewViewController.swift"
+                  timestampString = "521631370.53049"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "150">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -90,11 +120,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SignUpViewViewController.swift"
-            timestampString = "514733270.114023"
+            timestampString = "521476810.421201"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
             landmarkName = "SignUpViewViewController"
             landmarkType = "3">
             <Locations>
@@ -102,31 +132,61 @@
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "Kraze.SignUpViewViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; Kraze.SignUpViewViewController"
+                  symbolName = "Kraze.SignUpViewViewController.userPasswordConfirm.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UITextField&gt;"
                   moduleName = "Kraze"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xtnguyen/Documents/Tristan/KrazeApp/SignUpViewViewController.swift"
-                  timestampString = "520270272.245569"
+                  urlString = "file:///Users/xtnguyen/Documents/Kraze/Kraze_v1.1/SignUpViewViewController.swift"
+                  timestampString = "521631370.535602"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "24"
-                  endingLineNumber = "24"
-                  offsetFromSymbolStart = "145">
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "27">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "Kraze.SignUpViewViewController.__allocating_init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; Kraze.SignUpViewViewController"
+                  symbolName = "Kraze.SignUpViewViewController.userPasswordConfirm.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UITextField&gt;"
                   moduleName = "Kraze"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xtnguyen/Documents/Tristan/KrazeApp/SignUpViewViewController.swift"
-                  timestampString = "520270272.248419"
+                  urlString = "file:///Users/xtnguyen/Documents/Kraze/Kraze_v1.1/SignUpViewViewController.swift"
+                  timestampString = "521631370.537173"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "24"
-                  endingLineNumber = "24"
-                  offsetFromSymbolStart = "196">
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "42">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Kraze.SignUpViewViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; Kraze.SignUpViewViewController"
+                  moduleName = "Kraze"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xtnguyen/Documents/Kraze/Kraze_v1.1/SignUpViewViewController.swift"
+                  timestampString = "521631370.538746"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "351">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Kraze.SignUpViewViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;Kraze.SignUpViewViewController&gt;"
+                  moduleName = "Kraze"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xtnguyen/Documents/Kraze/Kraze_v1.1/SignUpViewViewController.swift"
+                  timestampString = "521631370.540278"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "262">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -153,13 +213,13 @@
                   symbolName = "Kraze.CheckBox.checkedImage.getter : __ObjC.UIImage"
                   moduleName = "Kraze"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xtnguyen/Documents/Tristan/KrazeApp/Kraze/CheckBox.swift"
-                  timestampString = "520270272.257948"
+                  urlString = "file:///Users/xtnguyen/Documents/Kraze/Kraze_v1.1/Kraze/CheckBox.swift"
+                  timestampString = "521631370.545378"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "14"
                   endingLineNumber = "14"
-                  offsetFromSymbolStart = "25">
+                  offsetFromSymbolStart = "35">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -168,28 +228,28 @@
                   symbolName = "Kraze.CheckBox.init (frame : __C.CGRect) -&gt; Kraze.CheckBox"
                   moduleName = "Kraze"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xtnguyen/Documents/Tristan/KrazeApp/Kraze/CheckBox.swift"
-                  timestampString = "520270272.261299"
+                  urlString = "file:///Users/xtnguyen/Documents/Kraze/Kraze_v1.1/Kraze/CheckBox.swift"
+                  timestampString = "521631370.546885"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "14"
                   endingLineNumber = "14"
-                  offsetFromSymbolStart = "107">
+                  offsetFromSymbolStart = "54">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "Kraze.CheckBox.__allocating_init (frame : __C.CGRect) -&gt; Kraze.CheckBox"
+                  symbolName = "Kraze.CheckBox.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;Kraze.CheckBox&gt;"
                   moduleName = "Kraze"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xtnguyen/Documents/Tristan/KrazeApp/Kraze/CheckBox.swift"
-                  timestampString = "520270272.264035"
+                  urlString = "file:///Users/xtnguyen/Documents/Kraze/Kraze_v1.1/Kraze/CheckBox.swift"
+                  timestampString = "521631370.548617"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "14"
                   endingLineNumber = "14"
-                  offsetFromSymbolStart = "160">
+                  offsetFromSymbolStart = "19">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -224,83 +284,6 @@
             endingLineNumber = "22"
             landmarkName = "CheckBox"
             landmarkType = "3">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "@objc Kraze.CheckBox.isChecked.setter : Swift.Bool"
-                  moduleName = "Kraze"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xtnguyen/Documents/Tristan/KrazeApp/Kraze/CheckBox.swift"
-                  timestampString = "520270272.278768"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "22"
-                  endingLineNumber = "22"
-                  offsetFromSymbolStart = "41">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Kraze.CheckBox.isChecked.setter : Swift.Bool"
-                  moduleName = "Kraze"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xtnguyen/Documents/Tristan/KrazeApp/Kraze/CheckBox.swift"
-                  timestampString = "520270272.281416"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "22"
-                  endingLineNumber = "22"
-                  offsetFromSymbolStart = "21">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Kraze.CheckBox.isChecked.didset : Swift.Bool"
-                  moduleName = "Kraze"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xtnguyen/Documents/Tristan/KrazeApp/Kraze/CheckBox.swift"
-                  timestampString = "520270272.284156"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "22"
-                  endingLineNumber = "22"
-                  offsetFromSymbolStart = "23">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Kraze.CheckBox.buttonClicked (sender : __ObjC.UIButton) -&gt; ()"
-                  moduleName = "Kraze"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xtnguyen/Documents/Tristan/KrazeApp/Kraze/CheckBox.swift"
-                  timestampString = "520270272.286786"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "22"
-                  endingLineNumber = "22"
-                  offsetFromSymbolStart = "167">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "@objc Kraze.CheckBox.buttonClicked (sender : __ObjC.UIButton) -&gt; ()"
-                  moduleName = "Kraze"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xtnguyen/Documents/Tristan/KrazeApp/Kraze/CheckBox.swift"
-                  timestampString = "520270272.289486"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "22"
-                  endingLineNumber = "22"
-                  offsetFromSymbolStart = "180">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -317,98 +300,6 @@
             endingLineNumber = "24"
             landmarkName = "CheckBox"
             landmarkType = "3">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "@objc Kraze.CheckBox.isChecked.setter : Swift.Bool"
-                  moduleName = "Kraze"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xtnguyen/Documents/Tristan/KrazeApp/Kraze/CheckBox.swift"
-                  timestampString = "520270272.297452"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "25"
-                  endingLineNumber = "25"
-                  offsetFromSymbolStart = "50">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Kraze.CheckBox.isChecked.setter : Swift.Bool"
-                  moduleName = "Kraze"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xtnguyen/Documents/Tristan/KrazeApp/Kraze/CheckBox.swift"
-                  timestampString = "520270272.300497"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "25"
-                  endingLineNumber = "25"
-                  offsetFromSymbolStart = "30">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Kraze.CheckBox.isChecked.didset : Swift.Bool"
-                  moduleName = "Kraze"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xtnguyen/Documents/Tristan/KrazeApp/Kraze/CheckBox.swift"
-                  timestampString = "520270272.303438"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "25"
-                  endingLineNumber = "25"
-                  offsetFromSymbolStart = "32">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Kraze.CheckBox.awakeFromNib () -&gt; ()"
-                  moduleName = "Kraze"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xtnguyen/Documents/Tristan/KrazeApp/Kraze/CheckBox.swift"
-                  timestampString = "520270272.306041"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "25"
-                  endingLineNumber = "25"
-                  offsetFromSymbolStart = "121">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "@objc Kraze.CheckBox.awakeFromNib () -&gt; ()"
-                  moduleName = "Kraze"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xtnguyen/Documents/Tristan/KrazeApp/Kraze/CheckBox.swift"
-                  timestampString = "520270272.308914"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "25"
-                  endingLineNumber = "25"
-                  offsetFromSymbolStart = "106">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Kraze.CheckBox.buttonClicked (sender : __ObjC.UIButton) -&gt; ()"
-                  moduleName = "Kraze"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xtnguyen/Documents/Tristan/KrazeApp/Kraze/CheckBox.swift"
-                  timestampString = "520270272.311941"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "25"
-                  endingLineNumber = "25"
-                  offsetFromSymbolStart = "129">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -425,38 +316,6 @@
             endingLineNumber = "31"
             landmarkName = "awakeFromNib()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Kraze.CheckBox.awakeFromNib () -&gt; ()"
-                  moduleName = "Kraze"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xtnguyen/Documents/Tristan/KrazeApp/Kraze/CheckBox.swift"
-                  timestampString = "520270272.323131"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "31"
-                  endingLineNumber = "31"
-                  offsetFromSymbolStart = "14">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "@objc Kraze.CheckBox.awakeFromNib () -&gt; ()"
-                  moduleName = "Kraze"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xtnguyen/Documents/Tristan/KrazeApp/Kraze/CheckBox.swift"
-                  timestampString = "520270272.32617"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "31"
-                  endingLineNumber = "31"
-                  offsetFromSymbolStart = "14">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -473,38 +332,6 @@
             endingLineNumber = "35"
             landmarkName = "buttonClicked(sender:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Kraze.CheckBox.buttonClicked (sender : __ObjC.UIButton) -&gt; ()"
-                  moduleName = "Kraze"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xtnguyen/Documents/Tristan/KrazeApp/Kraze/CheckBox.swift"
-                  timestampString = "520270272.331754"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "35"
-                  endingLineNumber = "35"
-                  offsetFromSymbolStart = "33">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "@objc Kraze.CheckBox.buttonClicked (sender : __ObjC.UIButton) -&gt; ()"
-                  moduleName = "Kraze"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xtnguyen/Documents/Tristan/KrazeApp/Kraze/CheckBox.swift"
-                  timestampString = "520270272.334396"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "35"
-                  endingLineNumber = "35"
-                  offsetFromSymbolStart = "46">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -534,9 +361,7 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "13"
-            endingLineNumber = "13"
-            landmarkName = "MapVC"
-            landmarkType = "3">
+            endingLineNumber = "13">
             <Locations>
                <Location
                   shouldBeEnabled = "Yes"
@@ -545,13 +370,13 @@
                   symbolName = "Kraze.MapVC.__deallocating_deinit"
                   moduleName = "Kraze"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xtnguyen/Documents/Tristan/KrazeApp/Kraze/MapVC.swift"
-                  timestampString = "520270272.339913"
+                  urlString = "file:///Users/xtnguyen/Documents/Kraze/Kraze_v1.1/Kraze/MapVC.swift"
+                  timestampString = "521631370.56834"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
                   endingLineNumber = "0"
-                  offsetFromSymbolStart = "12">
+                  offsetFromSymbolStart = "4">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -560,13 +385,13 @@
                   symbolName = "Kraze.MapVC.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; Kraze.MapVC"
                   moduleName = "Kraze"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xtnguyen/Documents/Tristan/KrazeApp/Kraze/MapVC.swift"
-                  timestampString = "520270272.343041"
+                  urlString = "file:///Users/xtnguyen/Documents/Kraze/Kraze_v1.1/Kraze/MapVC.swift"
+                  timestampString = "521631370.57014"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "14"
-                  endingLineNumber = "14"
-                  offsetFromSymbolStart = "716">
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "70">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -575,13 +400,13 @@
                   symbolName = "Kraze.MapVC.__allocating_init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; Kraze.MapVC"
                   moduleName = "Kraze"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xtnguyen/Documents/Tristan/KrazeApp/Kraze/MapVC.swift"
-                  timestampString = "520270272.346197"
+                  urlString = "file:///Users/xtnguyen/Documents/Kraze/Kraze_v1.1/Kraze/MapVC.swift"
+                  timestampString = "521631370.571992"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
-                  offsetFromSymbolStart = "105">
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "23">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -590,13 +415,28 @@
                   symbolName = "Kraze.MapVC.__allocating_init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;Kraze.MapVC&gt;"
                   moduleName = "Kraze"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xtnguyen/Documents/Tristan/KrazeApp/Kraze/MapVC.swift"
-                  timestampString = "520270272.348782"
+                  urlString = "file:///Users/xtnguyen/Documents/Kraze/Kraze_v1.1/Kraze/MapVC.swift"
+                  timestampString = "521631370.573521"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
-                  offsetFromSymbolStart = "72">
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Kraze.MapVC.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;Kraze.MapVC&gt;"
+                  moduleName = "Kraze"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xtnguyen/Documents/Kraze/Kraze_v1.1/Kraze/MapVC.swift"
+                  timestampString = "521631370.575008"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "28">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -623,13 +463,13 @@
                   symbolName = "Kraze.MapVC.__deallocating_deinit"
                   moduleName = "Kraze"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xtnguyen/Documents/Tristan/KrazeApp/Kraze/MapVC.swift"
-                  timestampString = "520270272.355923"
+                  urlString = "file:///Users/xtnguyen/Documents/Kraze/Kraze_v1.1/Kraze/MapVC.swift"
+                  timestampString = "521631370.580142"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
                   endingLineNumber = "0"
-                  offsetFromSymbolStart = "12">
+                  offsetFromSymbolStart = "4">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -638,13 +478,13 @@
                   symbolName = "Kraze.MapVC.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; Kraze.MapVC"
                   moduleName = "Kraze"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xtnguyen/Documents/Tristan/KrazeApp/Kraze/MapVC.swift"
-                  timestampString = "520270272.358811"
+                  urlString = "file:///Users/xtnguyen/Documents/Kraze/Kraze_v1.1/Kraze/MapVC.swift"
+                  timestampString = "521631370.581562"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "14"
-                  endingLineNumber = "14"
-                  offsetFromSymbolStart = "716">
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "70">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -653,13 +493,13 @@
                   symbolName = "Kraze.MapVC.__allocating_init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; Kraze.MapVC"
                   moduleName = "Kraze"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xtnguyen/Documents/Tristan/KrazeApp/Kraze/MapVC.swift"
-                  timestampString = "520270272.362592"
+                  urlString = "file:///Users/xtnguyen/Documents/Kraze/Kraze_v1.1/Kraze/MapVC.swift"
+                  timestampString = "521631370.582927"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
-                  offsetFromSymbolStart = "105">
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "23">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -668,13 +508,28 @@
                   symbolName = "Kraze.MapVC.__allocating_init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;Kraze.MapVC&gt;"
                   moduleName = "Kraze"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xtnguyen/Documents/Tristan/KrazeApp/Kraze/MapVC.swift"
-                  timestampString = "520270272.36539"
+                  urlString = "file:///Users/xtnguyen/Documents/Kraze/Kraze_v1.1/Kraze/MapVC.swift"
+                  timestampString = "521631370.585984"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
-                  offsetFromSymbolStart = "72">
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Kraze.MapVC.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;Kraze.MapVC&gt;"
+                  moduleName = "Kraze"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xtnguyen/Documents/Kraze/Kraze_v1.1/Kraze/MapVC.swift"
+                  timestampString = "521631370.589619"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "28">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -686,11 +541,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Kraze/MapVC.swift"
-            timestampString = "515426056.632355"
+            timestampString = "521389053.191271"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
             landmarkName = "loadView()"
             landmarkType = "7">
          </BreakpointContent>
@@ -702,11 +557,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Kraze/MapVC.swift"
-            timestampString = "515426056.632355"
+            timestampString = "521389053.191271"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
             landmarkName = "loadView()"
             landmarkType = "7">
          </BreakpointContent>
@@ -718,13 +573,75 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SignUpViewViewController.swift"
-            timestampString = "514733270.114023"
+            timestampString = "521476810.421201"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
             landmarkName = "SignUpViewViewController"
             landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Kraze.SignUpViewViewController.userLoginPassword.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UITextField&gt;"
+                  moduleName = "Kraze"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xtnguyen/Documents/Kraze/Kraze_v1.1/SignUpViewViewController.swift"
+                  timestampString = "521631370.607866"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "27">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Kraze.SignUpViewViewController.userLoginPassword.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UITextField&gt;"
+                  moduleName = "Kraze"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xtnguyen/Documents/Kraze/Kraze_v1.1/SignUpViewViewController.swift"
+                  timestampString = "521631370.609809"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "42">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Kraze.SignUpViewViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; Kraze.SignUpViewViewController"
+                  moduleName = "Kraze"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xtnguyen/Documents/Kraze/Kraze_v1.1/SignUpViewViewController.swift"
+                  timestampString = "521631370.611695"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "469">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Kraze.SignUpViewViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;Kraze.SignUpViewViewController&gt;"
+                  moduleName = "Kraze"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xtnguyen/Documents/Kraze/Kraze_v1.1/SignUpViewViewController.swift"
+                  timestampString = "521631370.613923"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "374">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -734,13 +651,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SignUpViewViewController.swift"
-            timestampString = "516901732.7892"
+            timestampString = "521585789.034418"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "111"
-            endingLineNumber = "111"
-            landmarkName = "SignUpViewViewController"
-            landmarkType = "3">
+            startingLineNumber = "156"
+            endingLineNumber = "156"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -750,13 +667,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SignUpViewViewController.swift"
-            timestampString = "516901732.7892"
+            timestampString = "521585789.034418"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "110"
-            endingLineNumber = "110"
-            landmarkName = "SignUpViewViewController"
-            landmarkType = "3">
+            startingLineNumber = "155"
+            endingLineNumber = "155"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -766,12 +683,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SignUpViewViewController.swift"
-            timestampString = "516901732.7892"
+            timestampString = "521585789.034418"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "115"
-            endingLineNumber = "115"
-            landmarkName = "loginButtonDidCompleteLogin(_:result:)"
+            startingLineNumber = "160"
+            endingLineNumber = "160"
+            landmarkName = "viewDidLoad()"
             landmarkType = "7">
             <Locations>
                <Location
@@ -814,27 +731,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Kraze/MapVC.swift"
-            timestampString = "517245444.020236"
+            timestampString = "521631369.388962"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "112"
-            endingLineNumber = "112"
-            landmarkName = "loadView()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Kraze/MapVC.swift"
-            timestampString = "516901732.7892"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
+            startingLineNumber = "126"
+            endingLineNumber = "126"
             landmarkName = "loadView()"
             landmarkType = "7">
          </BreakpointContent>
@@ -846,13 +747,75 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SignUpViewViewController.swift"
-            timestampString = "516707293.87171"
+            timestampString = "521476810.421201"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
             landmarkName = "SignUpViewViewController"
             landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Kraze.SignUpViewViewController.Navigation.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UINavigationBar&gt;"
+                  moduleName = "Kraze"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xtnguyen/Documents/Kraze/Kraze_v1.1/SignUpViewViewController.swift"
+                  timestampString = "521631370.631297"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "27">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Kraze.SignUpViewViewController.Navigation.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UINavigationBar&gt;"
+                  moduleName = "Kraze"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xtnguyen/Documents/Kraze/Kraze_v1.1/SignUpViewViewController.swift"
+                  timestampString = "521631370.632882"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "42">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Kraze.SignUpViewViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; Kraze.SignUpViewViewController"
+                  moduleName = "Kraze"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xtnguyen/Documents/Kraze/Kraze_v1.1/SignUpViewViewController.swift"
+                  timestampString = "521631370.634681"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "528">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Kraze.SignUpViewViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;Kraze.SignUpViewViewController&gt;"
+                  moduleName = "Kraze"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xtnguyen/Documents/Kraze/Kraze_v1.1/SignUpViewViewController.swift"
+                  timestampString = "521631370.636416"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "430">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -862,11 +825,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SignUpViewViewController.swift"
-            timestampString = "516728620.515578"
+            timestampString = "521585789.034418"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "88"
-            endingLineNumber = "88"
+            startingLineNumber = "133"
+            endingLineNumber = "133"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -878,13 +841,45 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SignUpViewViewController.swift"
-            timestampString = "516729039.443328"
+            timestampString = "521585789.034418"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "89"
-            endingLineNumber = "89"
+            startingLineNumber = "134"
+            endingLineNumber = "134"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Kraze.SignUpViewViewController.viewDidLoad () -&gt; ()"
+                  moduleName = "Kraze"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xtnguyen/Documents/Kraze/Kraze_v1.1/SignUpViewViewController.swift"
+                  timestampString = "521631370.641347"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "135"
+                  endingLineNumber = "135"
+                  offsetFromSymbolStart = "8039">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Kraze.SignUpViewViewController.viewDidLoad () -&gt; ()"
+                  moduleName = "Kraze"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xtnguyen/Documents/Kraze/Kraze_v1.1/SignUpViewViewController.swift"
+                  timestampString = "521631370.642912"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "135"
+                  endingLineNumber = "135"
+                  offsetFromSymbolStart = "9376">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -894,13 +889,45 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SignUpViewViewController.swift"
-            timestampString = "516729185.9558"
+            timestampString = "521585789.034418"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "99"
-            endingLineNumber = "99"
+            startingLineNumber = "144"
+            endingLineNumber = "144"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Kraze.SignUpViewViewController.viewDidLoad () -&gt; ()"
+                  moduleName = "Kraze"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xtnguyen/Documents/Kraze/Kraze_v1.1/SignUpViewViewController.swift"
+                  timestampString = "521631370.647088"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "144"
+                  endingLineNumber = "144"
+                  offsetFromSymbolStart = "10469">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Kraze.SignUpViewViewController.viewDidLoad () -&gt; ()"
+                  moduleName = "Kraze"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xtnguyen/Documents/Kraze/Kraze_v1.1/SignUpViewViewController.swift"
+                  timestampString = "521631370.649336"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "144"
+                  endingLineNumber = "144"
+                  offsetFromSymbolStart = "11806">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -922,31 +949,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Kraze/MapVC.swift"
-            timestampString = "516901656.650681"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
-            landmarkName = "loadView()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Kraze/MapVC.swift"
-            timestampString = "518017035.868343"
+            timestampString = "521631369.388962"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "113"
-            endingLineNumber = "113"
+            startingLineNumber = "127"
+            endingLineNumber = "127"
             landmarkName = "loadView()"
             landmarkType = "7">
          </BreakpointContent>
@@ -958,11 +969,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Kraze/MapVC.swift"
-            timestampString = "518017278.208716"
+            timestampString = "521631369.388962"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "139"
-            endingLineNumber = "139"
+            startingLineNumber = "153"
+            endingLineNumber = "153"
             landmarkName = "loadView()"
             landmarkType = "7">
          </BreakpointContent>
@@ -974,12 +985,230 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Kraze/Reglages.swift"
-            timestampString = "520342623.002177"
+            timestampString = "521632807.395502"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "120"
-            endingLineNumber = "120">
+            startingLineNumber = "242"
+            endingLineNumber = "242">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Kraze/Reglages.swift"
+            timestampString = "521632807.395502"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "238"
+            endingLineNumber = "238">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Kraze/Reglages.swift"
+            timestampString = "521632807.395502"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "238"
+            endingLineNumber = "238">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Kraze/MapVC.swift"
+            timestampString = "521484597.050895"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
+            landmarkName = "loadView()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Kraze/MapVC.swift"
+            timestampString = "521389053.191271"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "loadView()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Kraze/MapVC.swift"
+            timestampString = "521631369.388962"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "229"
+            endingLineNumber = "229"
+            landmarkName = "mapView(_:idleAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Kraze/Reglages.swift"
+            timestampString = "521632807.395502"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "95"
+            endingLineNumber = "95"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Kraze/Reglages.swift"
+            timestampString = "521632807.395502"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "193"
+            endingLineNumber = "193"
+            landmarkName = "mailComposeController(_:didFinishWith:error:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/FacebookShare/Sources/Share/Content/Link/LinkShareContent.swift"
+            timestampString = "521476404.888811"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "121"
+            endingLineNumber = "121"
+            landmarkName = "sdkSharingContentRepresentation"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Kraze/MapVC.swift"
+            timestampString = "521484597.050895"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
+            landmarkName = "loadView()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Kraze/MapVC.swift"
+            timestampString = "521484597.050895"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
+            landmarkName = "loadView()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SignUpViewViewController.swift"
+            timestampString = "521585789.034418"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Kraze/Reglages.swift"
+            timestampString = "521630771.956423"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "ReglagesVC"
+            landmarkType = "3">
             <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Kraze.ReglagesVC.userImageSettings.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UIImageView&gt;"
+                  moduleName = "Kraze"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xtnguyen/Documents/Kraze/Kraze_v1.1/Kraze/Reglages.swift"
+                  timestampString = "521631370.68659"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "27">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Kraze.ReglagesVC.userImageSettings.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UIImageView&gt;"
+                  moduleName = "Kraze"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xtnguyen/Documents/Kraze/Kraze_v1.1/Kraze/Reglages.swift"
+                  timestampString = "521631370.688168"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "42">
+               </Location>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
@@ -987,28 +1216,28 @@
                   symbolName = "Kraze.ReglagesVC.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; Kraze.ReglagesVC"
                   moduleName = "Kraze"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xtnguyen/Documents/Tristan/KrazeApp/Kraze/Reglages.swift"
-                  timestampString = "520270272.43275"
+                  urlString = "file:///Users/xtnguyen/Documents/Kraze/Kraze_v1.1/Kraze/Reglages.swift"
+                  timestampString = "521631370.689778"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "43"
-                  endingLineNumber = "43"
-                  offsetFromSymbolStart = "317">
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "70">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "function signature specialization &lt;Arg[0] = Owned To Guaranteed&gt; of Kraze.ReglagesVC.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;Kraze.ReglagesVC&gt;"
+                  symbolName = "Kraze.ReglagesVC.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;Kraze.ReglagesVC&gt;"
                   moduleName = "Kraze"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xtnguyen/Documents/Tristan/KrazeApp/Kraze/Reglages.swift"
-                  timestampString = "520270272.435551"
+                  urlString = "file:///Users/xtnguyen/Documents/Kraze/Kraze_v1.1/Kraze/Reglages.swift"
+                  timestampString = "521631370.69135"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "43"
-                  endingLineNumber = "43"
-                  offsetFromSymbolStart = "280">
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "31">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -1020,43 +1249,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Kraze/Reglages.swift"
-            timestampString = "520342623.002177"
+            timestampString = "521632807.395502"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "116"
-            endingLineNumber = "116">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Kraze.ReglagesVC.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; Kraze.ReglagesVC"
-                  moduleName = "Kraze"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xtnguyen/Documents/Tristan/KrazeApp/Kraze/Reglages.swift"
-                  timestampString = "520270272.447957"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "39"
-                  endingLineNumber = "39"
-                  offsetFromSymbolStart = "300">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "function signature specialization &lt;Arg[0] = Owned To Guaranteed&gt; of Kraze.ReglagesVC.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;Kraze.ReglagesVC&gt;"
-                  moduleName = "Kraze"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xtnguyen/Documents/Tristan/KrazeApp/Kraze/Reglages.swift"
-                  timestampString = "520270272.450749"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "39"
-                  endingLineNumber = "39"
-                  offsetFromSymbolStart = "263">
-               </Location>
-            </Locations>
+            startingLineNumber = "75"
+            endingLineNumber = "75"
+            landmarkName = "setNavigationBar()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1066,43 +1265,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Kraze/Reglages.swift"
-            timestampString = "520342623.002177"
+            timestampString = "521632807.395502"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "116"
-            endingLineNumber = "116">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Kraze.ReglagesVC.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; Kraze.ReglagesVC"
-                  moduleName = "Kraze"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xtnguyen/Documents/Tristan/KrazeApp/Kraze/Reglages.swift"
-                  timestampString = "520270272.456243"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "39"
-                  endingLineNumber = "39"
-                  offsetFromSymbolStart = "300">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "function signature specialization &lt;Arg[0] = Owned To Guaranteed&gt; of Kraze.ReglagesVC.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;Kraze.ReglagesVC&gt;"
-                  moduleName = "Kraze"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xtnguyen/Documents/Tristan/KrazeApp/Kraze/Reglages.swift"
-                  timestampString = "520270272.459323"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "39"
-                  endingLineNumber = "39"
-                  offsetFromSymbolStart = "263">
-               </Location>
-            </Locations>
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "setNavigationBar()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

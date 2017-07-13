@@ -11,39 +11,82 @@ import FacebookLogin
 import FacebookCore
 import FBSDKLoginKit
 import FBSDKCoreKit
-import Alamofire
 import Firebase
 import FirebaseAuth
+
+
         //FBSDKLoginButtonDelegate
 class SignUpViewViewController: UIViewController, UITextFieldDelegate, FBSDKLoginButtonDelegate{
     // variable in the inscription scene
-    @IBOutlet weak var facebookLogin: FBSDKLoginButton!
-    @IBOutlet weak var ScrollView: UIScrollView!
     @IBOutlet weak var UserFirstName: UITextField!
     @IBOutlet weak var userLastName: UITextField!
     @IBOutlet weak var userEmail: UITextField!
     @IBOutlet weak var userPassword: UITextField!
     @IBOutlet weak var userPasswordConfirm: UITextField!
     // variable in the main scene
-    //@IBOutlet weak var userLoginEmail: UITextField!
-    //@IBOutlet weak var userLoginPassword: UITextField!
+    @IBOutlet weak var userLoginEmail: UITextField!
+    @IBOutlet weak var userLoginPassword: UITextField!
+    
     @IBOutlet weak var Navigation: UINavigationBar!
     
+    @IBOutlet weak var ScrollView: UIScrollView!
+
+    @IBOutlet weak var facebookLogin: FBSDKLoginButton!
+    
+    
+    func setNavigationBar() {
+        UINavigationBar.appearance().barTintColor = UIColor.black
+        
+        let screenSize: CGRect = UIScreen.main.bounds
+        let navBar = UINavigationBar(frame: CGRect(x: 0, y: 0, width: screenSize.width, height: 50))
+        let navItem = UINavigationItem(title: "Inscription")
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName : UIColor.white]
+        UINavigationBar.appearance().tintColor = UIColor.white
+        
+        let doneItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.stop, target: nil, action: #selector(done))
+        let myBtn: UIButton = UIButton()
+        myBtn.setImage(UIImage(named: "quiticon"), for: .normal)
+        myBtn.frame = CGRect(x:0, y:0, width:70, height:70)
+        myBtn.addTarget(self, action: #selector(done), for: .touchUpInside)
+        
+        self.navigationItem.setRightBarButton(UIBarButtonItem(customView: myBtn), animated: true)
+        
+        navItem.leftBarButtonItem = doneItem
+        navBar.setItems([navItem], animated: false)
+        self.view.addSubview(navBar)
+    }
+    func done(_sender:Any) {
+        performSegue(withIdentifier: "toMain", sender: self)
+        
+        
+    }
     override func viewDidLoad() {
-        super.viewDidLoad()
+        
+        
+        self.setNavigationBar()
+
+       // super.viewDidLoad()
         //set facebook login button
         
-        /*let loginbutton = FBSDKLoginButton()
+       /* let loginbutton = FBSDKLoginButton()
         loginbutton.frame = CGRect(x: 130, y: 200, width: 100, height: 30)
         view.addSubview(loginbutton)
         loginbutton.delegate = self
-        loginbutton.readPermissions = ["email", "public_profile"]*/
+        loginbutton.readPermissions = ["email", "public_profile"] */
+       
+      /* let loginButton = FBSDKLoginButton()
+        loginButton.readPermissions = ["email", "public_profile"]
+        view.addSubview(loginButton)
+        let newCenter = CGPoint(x: self.view.frame.width / 2, y: self.view.frame.height/2 - 90)
+        loginButton.center = newCenter
+        loginButton.delegate = self */
         let facebookLogin = self.facebookLogin
         facebookLogin?.delegate = self
         facebookLogin?.readPermissions = ["email", "public_profile"]
         
+        
         //set attributes for textfield of Main scene
-        /*let userLoginEmail = self.userLoginEmail
+        let userLoginEmail = self.userLoginEmail
         let userLoginPassword = self.userLoginPassword
         userLoginEmail?.attributedPlaceholder = NSAttributedString(string: "Email", attributes: [
             NSForegroundColorAttributeName : UIColor.white,
@@ -54,7 +97,7 @@ class SignUpViewViewController: UIViewController, UITextFieldDelegate, FBSDKLogi
             NSForegroundColorAttributeName : UIColor.white,
             NSFontAttributeName: UIFont.systemFont(ofSize: 14)
             ])
-        userLoginPassword?.textColor = UIColor.white*/
+        userLoginPassword?.textColor = UIColor.white
         
         //set attributes for textfield of Inscription scene
         let UserFirstName = self.UserFirstName
@@ -89,7 +132,7 @@ class SignUpViewViewController: UIViewController, UITextFieldDelegate, FBSDKLogi
         userPasswordConfirm?.textColor = UIColor.white
         
         // set color of clear button
-        /*if let clearButton = userLoginEmail?.value(forKey: "_clearButton") as? UIButton {
+        if let clearButton = userLoginEmail?.value(forKey: "_clearButton") as? UIButton {
             // Create a template copy of the original button image
             let templateImage =  clearButton.imageView?.image?.withRenderingMode(.alwaysTemplate)
             // Set the template image copy as the button image
@@ -106,7 +149,7 @@ class SignUpViewViewController: UIViewController, UITextFieldDelegate, FBSDKLogi
             clearButton.setImage(templateImage, for: .highlighted)
             // Finally, set the image color
             clearButton.tintColor = .white
-        }*/
+        }
         if let clearButton = userEmail?.value(forKey: "_clearButton") as? UIButton {
             // Create a template copy of the original button image
             let templateImage =  clearButton.imageView?.image?.withRenderingMode(.alwaysTemplate)
@@ -136,8 +179,8 @@ class SignUpViewViewController: UIViewController, UITextFieldDelegate, FBSDKLogi
         }
         
         //set delegate for UItext
-        /*userLoginEmail?.delegate = self
-        userLoginPassword?.delegate = self*/
+        userLoginEmail?.delegate = self
+        userLoginPassword?.delegate = self
         UserFirstName?.delegate = self
         userLastName?.delegate = self
         userEmail?.delegate = self
@@ -153,8 +196,7 @@ class SignUpViewViewController: UIViewController, UITextFieldDelegate, FBSDKLogi
         return true
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        //self.view.endEditing(true)
-        self.ScrollView.endEditing(true)
+        self.view.endEditing(true)
     }
     
     //configurate navigation bar
@@ -263,7 +305,7 @@ class SignUpViewViewController: UIViewController, UITextFieldDelegate, FBSDKLogi
     }
     
     // In the main scene, button login(firebase)
-    /*@IBAction func userLoginTapped(_ sender: Any) {
+    @IBAction func userLoginTapped(_ sender: Any) {
         let userLoginEmail = self.userLoginEmail.text
         let userLoginPassword = self.userLoginPassword.text
         Auth.auth().signIn(withEmail: userLoginEmail!, password: userLoginPassword!) { (user, error) in
@@ -275,7 +317,79 @@ class SignUpViewViewController: UIViewController, UITextFieldDelegate, FBSDKLogi
             self.performSegue(withIdentifier: "segueConnecter", sender: self)
             }
         }
-    }*/
+    }
+    
+    //function: transfer infors of Inscription(json) to server
+    @IBAction func Afficher(_ sender: Any) {
+        let userFirstName = self.UserFirstName.text
+        let userLastName = self.userLastName.text
+        let userEmail = self.userEmail.text
+        let userPassword = self.userPassword.text
+        let userPasswordConfirm = self.userPasswordConfirm.text
+        // set un array
+        let parameters = ["FirstName": userFirstName!,
+                          "LastName": userLastName!,
+                          "Email": userEmail!,
+                          "Password": userPassword!,
+                          "PasswordConfirm": userPasswordConfirm!]
+        print(parameters)
+        //let string = NSString(data: body!, encoding: String.Encoding.utf8.rawValue)
+        guard let url = NSURL(string: "https://jsonplaceholder.typicode.com/posts") else{ return }
+        var request = URLRequest(url: url as URL)
+        request.httpMethod = "POST"
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        // change array to jsondata
+        guard let httpBody = try? JSONSerialization.data(withJSONObject: parameters, options: []) else {
+            return
+        }
+        request.httpBody = httpBody
+        let session = URLSession.shared
+        session.dataTask(with: request) { (data, response, error) in
+            if let response = response {
+                print(response)
+            }
+            if let data = data {
+                do{
+                    let json = try JSONSerialization.jsonObject(with: data, options: .allowFragments)
+                    print(json)
+                } catch {
+                    print(error)
+                }
+            }
+            }.resume()
+    }
+
+    @IBAction func confirmBDD(_ sender: Any) {
+        let userLoginEmail = self.userLoginEmail.text
+        let userLoginPassword = self.userLoginPassword.text
+        let parameters = ["Email": userLoginEmail!,
+                          "Password": userLoginPassword!]
+        print(parameters)
+        guard let url = NSURL(string: "https://jsonplaceholder.typicode.com/posts") else{ return }
+        var request = URLRequest(url: url as URL)
+        request.httpMethod = "POST"
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        // change array to jsondata
+        guard let httpBody = try? JSONSerialization.data(withJSONObject: parameters, options: []) else {
+            return
+        }
+        request.httpBody = httpBody
+        let session = URLSession.shared
+        session.dataTask(with: request) { (data, response, error) in
+            if let response = response {
+                print(response)
+            }
+            if let data = data {
+                do{
+                    let json = try JSONSerialization.jsonObject(with: data, options: .allowFragments)
+                    print(json)
+                } catch {
+                    print(error)
+                }
+            }
+            }.resume()
+        
+    }
     //  match for email/password
     struct MyRegex {
         let regex: NSRegularExpression?
@@ -321,6 +435,7 @@ class SignUpViewViewController: UIViewController, UITextFieldDelegate, FBSDKLogi
             print(error)
         }
         showInformation()
+        
     }
     
     func showInformation(){
@@ -363,16 +478,17 @@ class SignUpViewViewController: UIViewController, UITextFieldDelegate, FBSDKLogi
                 
             })
         }
+        
+        
     }
     func textFieldDidBeginEditing(_ textField: UITextField){
         if (textField == userEmail){
-        ScrollView.setContentOffset(CGPoint(x:0,y:150), animated: true)
+            ScrollView.setContentOffset(CGPoint(x:0,y:180), animated: true)
         }
     }
     func textFieldDidEndEditing(_ textField: UITextField) {
         ScrollView.setContentOffset(CGPoint(x:0,y:0), animated: true)
     }
-    
     /*
     // MARK: - Navigation
 

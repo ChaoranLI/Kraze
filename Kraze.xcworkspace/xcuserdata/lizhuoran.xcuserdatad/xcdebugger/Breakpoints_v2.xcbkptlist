@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Kraze/MapVC.swift"
-            timestampString = "521478844.411049"
+            timestampString = "521648890.554115"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "108"
-            endingLineNumber = "108"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
             landmarkName = "loadView()"
             landmarkType = "7">
          </BreakpointContent>

@@ -7,27 +7,31 @@
 //
 
 import UIKit
-import Firebase
 import FacebookLogin
 import FacebookCore
 import FBSDKLoginKit
 import FBSDKCoreKit
+import Firebase
 import FirebaseAuth
 
-class MainVC: UIViewController, UITextFieldDelegate, FBSDKLoginButtonDelegate{
 
-    @IBOutlet weak var FacebookLogin: FBSDKLoginButton!
-    @IBOutlet weak var userLoginEmail: UITextField!
+
+class MainVC: UIViewController, UITextFieldDelegate, FBSDKLoginButtonDelegate{
+    
     @IBOutlet weak var userLoginPassword: UITextField!
+    @IBOutlet weak var userLoginEmail: UITextField!
+  
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        let loginButton = FBSDKLoginButton()
+        loginButton.readPermissions = ["email", "public_profile"]
+        view.addSubview(loginButton)
+        let newCenter = CGPoint(x: self.view.frame.width / 2, y: self.view.frame.height/2 - 90)
+        loginButton.center = newCenter
+        loginButton.delegate = self
+        
+        
         // Do any additional setup after loading the view.
-        
-        let facebookLogin = self.FacebookLogin
-        facebookLogin?.delegate = self
-        facebookLogin?.readPermissions = ["email", "public_profile"]
-        
         
         let userLoginEmail = self.userLoginEmail
         let userLoginPassword = self.userLoginPassword
@@ -81,10 +85,9 @@ class MainVC: UIViewController, UITextFieldDelegate, FBSDKLoginButtonDelegate{
         Auth.auth().signIn(withEmail: userLoginEmail!, password: userLoginPassword!) { (user, error) in
             if error != nil{
                 print(error)
-                self.displayMyAlertMessage(userMessage: "L'email n'exist pas ou le mot de passe incorrect")
                 return
             }else{
-                print("Vous avez bien connecté")
+                print("Vous etes bien connectés")
                 self.performSegue(withIdentifier: "segueConnecter", sender: self)
             }
         }
@@ -100,21 +103,10 @@ class MainVC: UIViewController, UITextFieldDelegate, FBSDKLoginButtonDelegate{
             }
         }
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    func displayMyAlertMessage(userMessage:String)
-    {
-        let myAlert  = UIAlertController(title:"Alert", message: userMessage, preferredStyle: UIAlertControllerStyle.alert)
-        
-        let okAction = UIAlertAction(title:"Ok", style: UIAlertActionStyle.default, handler:nil)
-        
-        myAlert.addAction(okAction)
-        
-        self.present(myAlert, animated:true, completion:nil)
-        
     }
     func loginButtonDidLogOut(_ loginButton: FBSDKLoginButton!) {
         print("Did log out of facebook")
@@ -166,14 +158,18 @@ class MainVC: UIViewController, UITextFieldDelegate, FBSDKLoginButtonDelegate{
             })
         }
     }
+
+    
+    
+    
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }
