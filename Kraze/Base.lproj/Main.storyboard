@@ -414,7 +414,7 @@
                                 </connections>
                             </button>
                             <navigationBar contentMode="scaleAspectFit" fixedFrame="YES" barStyle="blackTranslucent" backIndicatorImage="Retour" translatesAutoresizingMaskIntoConstraints="NO" id="1kY-OH-e0z">
-                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <textAttributes key="titleTextAttributes">
@@ -660,6 +660,24 @@
             </objects>
             <point key="canvasLocation" x="1605" y="2102"/>
         </scene>
+        <!--VideoVC-->
+        <scene sceneID="7m3-2s-6bI">
+            <objects>
+                <viewController id="YE3-Sp-Wd7" customClass="VideoVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ox9-l9-EJ2"/>
+                        <viewControllerLayoutGuide type="bottom" id="AnA-mi-iwR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wCC-G6-Ep9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DQW-rk-Yjk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2593" y="1808"/>
+        </scene>
         <!--MapVC-->
         <scene sceneID="O6K-vj-x13">
             <objects>
@@ -677,6 +695,7 @@
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <connections>
                         <segue destination="x5A-eK-AWj" kind="show" identifier="toSettings" id="B6K-Fx-SZz"/>
+                        <segue destination="YE3-Sp-Wd7" kind="show" identifier="toEvent" id="J5B-9s-Ywm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QGx-rr-Q5n" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -701,10 +720,10 @@
         <image name="signupDone" width="667" height="375"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="cU2-1v-SKp"/>
-        <segue reference="Z8S-rr-bBM"/>
-        <segue reference="xsT-sa-iXA"/>
+        <segue reference="aRz-JR-Fj1"/>
         <segue reference="Oah-nU-Lqu"/>
+        <segue reference="De9-96-zTR"/>
+        <segue reference="Brn-nZ-2iU"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
 </document>

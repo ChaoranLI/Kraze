@@ -11,11 +11,11 @@ import UIKit
 import MessageUI
 import FBSDKCoreKit
 import FBSDKLoginKit
-import Firebase
+import FirebaseDatabase
 import FirebaseAuth
 
 
-class ReglagesVC: UIViewController, MFMailComposeViewControllerDelegate {
+class ReglagesVC: UIViewController, MFMailComposeViewControllerDelegate{
     
     func quitSettings(){
         performSegue(withIdentifier: "closeSettings", sender: self)
@@ -90,13 +90,13 @@ class ReglagesVC: UIViewController, MFMailComposeViewControllerDelegate {
         
         self.setNavigationBar()
     
-        let logOutbutton = UIButton(frame:CGRect(x: 10, y: 70, width: 30, height: 30))
+        let logOutbutton = UIButton(frame:CGRect(x: 330, y: 70, width: 30, height: 30))
         logOutbutton.setImage(UIImage(named: "LogOut"), for: .normal)
         logOutbutton.addTarget(self, action: #selector(returnAction), for: .touchUpInside)
         self.view.addSubview(logOutbutton)
         super.viewDidLoad()
         
-    
+        //Pull Facebook photo
         
         var ref: DatabaseReference!
         ref = Database.database().reference()
@@ -117,6 +117,9 @@ class ReglagesVC: UIViewController, MFMailComposeViewControllerDelegate {
         }){ (error) in
             print(error.localizedDescription)
         }
+        
+        self.userImageSettings.layer.cornerRadius = self.userImageSettings.frame.size.width / 2;
+        self.userImageSettings.clipsToBounds = true
         
         // Do any additional setup after loading the view, typically from a nib.
     }

@@ -8,24 +8,93 @@
 
 import Foundation
 import UIKit
+import AVKit
+import AVFoundation
+import Firebase
+import FirebaseCore
+import FirebaseAuth
+import FirebaseDatabase
+
+//////////////////////////////////
+
+class Message: NSObject{
+    var text: String?
+    var date: NSDate?
+    
+    var user: User?
+}
+
+class User: NSObject{
+    var id: String?
+    
+    var name: String?
+    var profileImageName: String?
+}
+
+class Club: NSObject{
+    var id: String?
+    var name: String?
+    
+    //var tel: String?
+    //var address: String?
+    //var timetable: [String:(NSDate, NSDate)]?
+    //var prices: [String: String]?
+    
+    var liveUrl: String?
+}
+
+//////////////////////////////////
 
 class Messaging: UICollectionViewController, UICollectionViewDelegateFlowLayout{
     
-    var messages: [Message]?
+    var club: Club?
+    var clubId: String? //club ou clubId -> à choisir
+    
+    
+    var messages: [Message]?    //didSet
+    
+    
+    func loadMessages(){
+        /*let ref = Database.database().reference().child("chat")
+         ref.observeEventType(.ChildAdded, withBlock:{ (snapshot) in
+         if let dictionnary = snapshot.value as? [String: AnyObject] {
+         let message = Message()
+         message.setValuesForKeysWithDictionary(dictionary)
+         print message.text
+         }
+         }, withCancelBlock: nil)*/
+        
+        
+        
+        let ref: DatabaseReference!
+        ref = Database.database().reference()
+        ref.child("Clubs").child("Chateau de Montlivault").child("Event").child("Chat").observe(.value, with: { (snapshot) in
+            guard let value = snapshot.value as? [String: AnyObject] else { return }
+            //print(value)
+         let contentChat = value["contentChat"] as? String
+         print(contentChat)
+            
+        }){ (error) in
+            print(error.localizedDescription)
+        }
+    }
+    
     var users: [User]?
+    
     private let cellId = "cellId"
     
     func setupData() {
-        //fonction à supprimer avec l'arrivée du back end
+        //fonction à supprimer avec l'arrivée de firebase
+        let date = Date() as? NSDate
         
         let user1: User = createNewUser(username: "Hector", profileImage: "hectorpic")
-        let message1: Message = createMessageWithText(text: "L'ambiance est dingue, c'est le feu !", user: user1, minutesAgo: 10)
+        let message1: Message = createMessageWithText(text: "L'ambiance est dingue, c'est le feu !", user: user1, date: date!)
         
         let user2: User = createNewUser(username: "Ines", profileImage: "inespic")
-        let message2: Message = createMessageWithText(text: "Queue interminable! Il faut que je rentre pour Krono", user: user2, minutesAgo: 7)
+        let message2: Message = createMessageWithText(text: "Queue interminable! Il faut que je rentre pour Krono", user: user2, date: date!)
         
         let user3: User = createNewUser(username: "Chloe", profileImage: "chloepic")
-        let message3: Message = createMessageWithText(text: "Seuls ceux sur liste peuvent rentrer actuellement", user: user3, minutesAgo: 2)
+        let message3: Message = createMessageWithText(text: "Seuls ceux sur liste peuvent rentrer actuellement", user: user3, date: date!)
         
         let user4: User = createNewUser(username: "Bastien", profileImage: "bastienpic")
         
@@ -34,22 +103,72 @@ class Messaging: UICollectionViewController, UICollectionViewDelegateFlowLayout{
         messages = messages?.sorted(by: {$0.date!.compare($1.date! as Date) == .orderedAscending})
     }
     
-    lazy var infosBtn: UIButton = {
-        let btn = UIButton()
-        btn.setImage(UIImage(named: "infoicon"), for: .normal)
-        btn.contentMode = .scaleAspectFill
-        btn.layer.cornerRadius = 15
-        btn.layer.masksToBounds = true
-        //btn.backgroundColor = UIColor.lightGray
-        return btn
+    func setNavigationBar() {
+        UINavigationBar.appearance().barTintColor = UIColor.black
+        
+        let screenSize: CGRect = UIScreen.main.bounds
+        let navBar = UINavigationBar(frame: CGRect(x: 0, y: 0, width: screenSize.width, height: screenSize.height * 0.15))
+        let navItem = UINavigationItem(title: "Live")
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName : UIColor.white]
+        UINavigationBar.appearance().tintColor = UIColor.white
+        
+        let doneItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.stop, target: nil, action: #selector(done))
+        let myBtn: UIButton = UIButton()
+        myBtn.setImage(UIImage(named: "quiticon"), for: .normal)
+        myBtn.frame = CGRect(x:0, y:0, width:70, height:70)
+        myBtn.addTarget(self, action: #selector(done), for: .touchUpInside)
+        
+        self.navigationItem.setRightBarButton(UIBarButtonItem(customView: myBtn), animated: true)
+        
+        navItem.leftBarButtonItem = doneItem
+        navBar.setItems([navItem], animated: false)
+        self.view.addSubview(navBar)
+    }
+    
+    func done(_sender:Any) {
+        performSegue(withIdentifier: "closeSettings", sender: self)
+    }
+    
+    let videoContainer: UIView = {
+        let view = UIView()
+        view.backgroundColor = UIColor.clear
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
     }()
     
+    var playerLayer: AVPlayerLayer?
+    var player: AVPlayer?
     
-    let videoView: UIView = {
-        let video = UIView()
-        video.backgroundColor = UIColor.black
-        return video
-    }()
+    var videoURL: String?
+    
+    
+    func handlePlay() {
+        
+        var ref: DatabaseReference!
+        ref = Database.database().reference()
+        
+        
+        ref.child("Clubs").child("Chateau de Montlivault").child("Event").observeSingleEvent(of: .value, with: { (snapshot) in
+            guard let value = snapshot.value as? [String: AnyObject] else { return }
+            print(value)
+            self.videoURL = value["videoURL"]! as? String
+            print(self.videoURL!)
+            
+            
+        }){ (error) in
+            print(error.localizedDescription)
+        }
+        
+        /*
+         if let url = URL(string: videoURL!){
+         player = AVPlayer(url: url)
+         
+         playerLayer = AVPlayerLayer(player: player)
+         playerLayer?.frame = videoContainer.bounds
+         videoContainer.layer.addSublayer(playerLayer!)
+         player?.play()
+         }*/
+    }
     
     let messageInputContainerView: UIView = {
         let view = UIView()
@@ -71,7 +190,6 @@ class Messaging: UICollectionViewController, UICollectionViewDelegateFlowLayout{
         view.backgroundColor = UIColor(white: 0.15, alpha: 1)
         view.layer.cornerRadius = 18
         view.layer.masksToBounds = true
-        
         return view
     }()
     
@@ -97,13 +215,24 @@ class Messaging: UICollectionViewController, UICollectionViewDelegateFlowLayout{
     //Gestion de l'envoi du message
     func handleSend() {
         print(inputTextField.text!)
-        messages?.append(createMessageWithText(text: inputTextField.text!, user: (users?[3])!, minutesAgo: 0.0))
+        let date = Date() as? NSDate
+        messages?.append(createMessageWithText(text: inputTextField.text!, user: (users?[3])!, date: date!))
         
         let insertionIndexPath = IndexPath(item: self.messages!.count - 1, section: 0)
         collectionView?.insertItems(at: [insertionIndexPath])
         self.collectionView?.scrollToItem(at: insertionIndexPath, at: .bottom, animated: true)  //ne fonctionne pas
         
         inputTextField.text = ""
+        
+        //Message uploaded sur firebase
+        
+        
+        
+        
+        
+        
+        
+        
     }
     
     var bottomConstraint: NSLayoutConstraint?
@@ -129,6 +258,7 @@ class Messaging: UICollectionViewController, UICollectionViewDelegateFlowLayout{
         
         view.addConstraintsWithFormat(format: "H:|-8-[v0(36)]", views: userProfileImageView)
         view.addConstraintsWithFormat(format: "V:[v0(36)]-8-|", views: userProfileImageView)
+        
         self.userProfileImageView.image = UIImage(named: "bastienpic")
         
         bottomConstraint = NSLayoutConstraint(item: messageInputContainerView, attribute: .bottom, relatedBy: .equal, toItem: view, attribute: .bottom, multiplier: 1, constant: 0)
@@ -138,7 +268,6 @@ class Messaging: UICollectionViewController, UICollectionViewDelegateFlowLayout{
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        navigationItem.title = "Messaging"
         
         collectionView?.backgroundColor = UIColor(white: 0.9, alpha: 0.5)   //darkGray
         collectionView?.register(ChatLogMessageCell.self, forCellWithReuseIdentifier: cellId)
@@ -147,8 +276,22 @@ class Messaging: UICollectionViewController, UICollectionViewDelegateFlowLayout{
         
         setupData()
         
+        view.addSubview(videoContainer)
+        view.addConstraintsWithFormat(format: "H:|[v0]|", views: videoContainer)
+        view.addConstraintsWithFormat(format: "V:|-\(view.frame.height * 0.15)-[v0(\(view.frame.height * 0.35))]", views: videoContainer)
+        
+        handlePlay()
+        
         NotificationCenter.default.addObserver(self, selector: #selector(handleKeyboardNotification), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(handleKeyboardNotification), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+        
+        self.setNavigationBar()
+        
+        //Firebase
+        loadMessages()
+        
+        
+        
     }
     
     //Gestion du keyboard
@@ -189,11 +332,12 @@ class Messaging: UICollectionViewController, UICollectionViewDelegateFlowLayout{
         return 0
     }
     
-    func createMessageWithText(text: String, user: User, minutesAgo: Double) -> Message {
+    //permet de creer un message a partir des 3 infos
+    func createMessageWithText(text: String, user: User, date: NSDate) -> Message {
         let message = Message()
         message.user = user
         message.text = text
-        message.date = Date().addingTimeInterval(-minutesAgo * 60) as? NSDate
+        message.date = date
         return message
     }
     
@@ -256,10 +400,17 @@ class Messaging: UICollectionViewController, UICollectionViewDelegateFlowLayout{
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsetsMake(view.frame.height * 0.5 + 8, 0, 48 + 8, 0)   //décalage à partir du haut de l'écran
+        return UIEdgeInsetsMake(view.frame.height * 0.5 + 8, 0, 48 + 8, 0)   //décalage de 56px à partir du bas de l'écran et debut du chat a la moitie de l'ecran
     }
 }
 
+
+
+
+
+
+
+//Affichage des messages
 class ChatLogMessageCell: BaseCell {
     
     let messageTextView: UITextView = {
@@ -320,26 +471,6 @@ class ChatLogMessageCell: BaseCell {
     }
 }
 
-class Message: NSObject{
-    var text: String?
-    var date: NSDate?
-    
-    var user: User?
-}
-
-class User: NSObject{
-    var name: String?
-    var profileImageName: String?
-}
-
-class Club: NSObject{
-    var name: String?
-    var tel: String?
-    var address: String?
-    var timetable: [String:(NSDate, NSDate)]?
-    var prices: [String: String]?
-}
-
 class BaseCell: UICollectionViewCell {
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -366,4 +497,5 @@ extension UIView {
         addConstraints(NSLayoutConstraint.constraints(withVisualFormat: format, options: NSLayoutFormatOptions(), metrics: nil, views: viewsDictionary))
     }
 }
+
 

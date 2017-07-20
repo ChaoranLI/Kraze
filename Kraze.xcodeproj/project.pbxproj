@@ -50,7 +50,6 @@
 		5AC292E41E9BB29B00AA0E78 /* Baron-Neue-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5A4AA46D1E9B834C0018B727 /* Baron-Neue-Bold.otf */; };
 		5AC292E51E9BB2A100AA0E78 /* Baron-Neue.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5A4AA46F1E9B834C0018B727 /* Baron-Neue.otf */; };
 		5AC292E61E9BB2A100AA0E78 /* Baron-Neue.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5A4AA46F1E9B834C0018B727 /* Baron-Neue.otf */; };
-		5AC292EC1E9CE1A500AA0E78 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5AE41F441E97DD060099D348 /* Info.plist */; };
 		5AC292F41E9D186C00AA0E78 /* SignUpViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC292F31E9D186C00AA0E78 /* SignUpViewViewController.swift */; };
 		5AC292F61E9D21A500AA0E78 /* Connect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC292F51E9D21A500AA0E78 /* Connect.swift */; };
 		5AC292FA1E9FC42800AA0E78 /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC292F91E9FC42800AA0E78 /* CheckBox.swift */; };
@@ -63,6 +62,7 @@
 		5AE41F431E97DD060099D348 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AE41F411E97DD060099D348 /* LaunchScreen.storyboard */; };
 		5AE41F4E1E97DD060099D348 /* KrazeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE41F4D1E97DD060099D348 /* KrazeTests.swift */; };
 		5AE41F591E97DD060099D348 /* KrazeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE41F581E97DD060099D348 /* KrazeUITests.swift */; };
+		5AFCEDEF1F1A5C0B00AFACDF /* VideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFCEDEE1F1A5C0B00AFACDF /* VideoVC.swift */; };
 		68E474CC2789C6565D7F1E90 /* Pods_Kraze.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B48FDEBA7F87B5516CB78710 /* Pods_Kraze.framework */; };
 		6BCCB69A9DCD7ABAB22BBD5C /* Pods_KrazeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F025082A25116307C051F71 /* Pods_KrazeUITests.framework */; };
 		7E1949DCEBF04E964D8C273B /* Pods_KrazeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2BC2D6341C70A72146DB568 /* Pods_KrazeTests.framework */; };
@@ -150,6 +150,7 @@
 		5AE41F581E97DD060099D348 /* KrazeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KrazeUITests.swift; sourceTree = "<group>"; };
 		5AE41F5A1E97DD060099D348 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5AECF1AD1ED5C11200AE6029 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Bridging-Header.h"; path = "/Users/xtnguyen/Documents/Tristan/KrazeApp/Bridging-Header.h"; sourceTree = "<absolute>"; };
+		5AFCEDEE1F1A5C0B00AFACDF /* VideoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoVC.swift; sourceTree = "<group>"; };
 		65A4668DB9C0A9BAC581969C /* Pods-KrazeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KrazeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KrazeTests/Pods-KrazeTests.release.xcconfig"; sourceTree = "<group>"; };
 		8F025082A25116307C051F71 /* Pods_KrazeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KrazeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B48FDEBA7F87B5516CB78710 /* Pods_Kraze.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kraze.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -296,6 +297,7 @@
 				5AE41F371E97DD060099D348 /* ViewController.swift */,
 				5AE41F391E97DD060099D348 /* Main.storyboard */,
 				5A621B2E1F13A72200E1303E /* Messaging.swift */,
+				5AFCEDEE1F1A5C0B00AFACDF /* VideoVC.swift */,
 				F9EE6C3B1EE98B9A000A1C67 /* CGU.swift */,
 				5A789D981EB214ED00D5B2A6 /* MainVC.swift */,
 				5A4AA4691E9B83090018B727 /* Ressources */,
@@ -423,7 +425,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Xuan Tung Nguyen";
 				TargetAttributes = {
 					5AE41F311E97DD060099D348 = {
@@ -502,7 +504,6 @@
 				5A4AA4711E9B834C0018B727 /* Baron-Neue-Black.otf in Resources */,
 				5A4808C91F138214005D4173 /* Nexa-XBold.ttf in Resources */,
 				5A4808BD1F138214005D4173 /* Nexa-Bold-Italic.ttf in Resources */,
-				5AC292EC1E9CE1A500AA0E78 /* Info.plist in Resources */,
 				5A4AA4751E9B834C0018B727 /* Baron-Neue.otf in Resources */,
 				5A4808BF1F138214005D4173 /* Nexa-Book-Italic.ttf in Resources */,
 				5A4808C01F138214005D4173 /* Nexa-Book.ttf in Resources */,
@@ -688,6 +689,7 @@
 				5AE41F381E97DD060099D348 /* ViewController.swift in Sources */,
 				5A4EFFEA1EE04D5600278D13 /* ClusterManager.swift in Sources */,
 				5AC292FC1EA0F6AB00AA0E78 /* MapVC.swift in Sources */,
+				5AFCEDEF1F1A5C0B00AFACDF /* VideoVC.swift in Sources */,
 				5A4EFFE61EE04CF900278D13 /* Annotation.swift in Sources */,
 				5A789D991EB214ED00D5B2A6 /* MainVC.swift in Sources */,
 				5AE41F361E97DD060099D348 /* AppDelegate.swift in Sources */,
@@ -825,8 +827,8 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -860,6 +862,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Kraze/Kraze.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = EML4TWANDS;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -871,6 +874,7 @@
 				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = kraze.Kraze;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "./Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
@@ -882,6 +886,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Kraze/Kraze.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = EML4TWANDS;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -894,6 +900,7 @@
 				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = kraze.Kraze;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "./Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};

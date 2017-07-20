@@ -18,22 +18,22 @@
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
-    <key>CFBundleURLTypes</key>
-    <array>
-        <dict>
-            <key>CFBundleURLSchemes</key>
-            <array>
-                <string>fb1823241754597277</string>
-            </array>
-        </dict>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>fb1823241754597277</string>
+			</array>
+		</dict>
 	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
-    <key>FacebookAppID</key>
-    <string>1823241754597277</string>
-    <key>FacebookDisplayName</key>
-    <string>Kraze</string>
-    <key>LSApplicationQueriesSchemes</key>
+	<key>FacebookAppID</key>
+	<string>1823241754597277</string>
+	<key>FacebookDisplayName</key>
+	<string>Kraze</string>
+	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>googlechromes</string>
 		<string>comgooglemaps</string>
@@ -44,6 +44,8 @@
 	<true/>
 	<key>NSAppTransportSecurity</key>
 	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
 		<key>NSExceptionDomains</key>
 		<dict>
 			<key>www.kraze.fr</key>
@@ -53,9 +55,9 @@
 			</dict>
 		</dict>
 	</dict>
-    <key>NSLocationWhenInUseUsageDescription</key>
-    <string>$(Kraze) location use.</string>
-    <key>UIAppFonts</key>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>$(Kraze) location use.</string>
+	<key>UIAppFonts</key>
 	<array>
 		<string>Baron-Neue-Black-Italic.otf</string>
 		<string>Baron-Neue-Black.otf</string>
