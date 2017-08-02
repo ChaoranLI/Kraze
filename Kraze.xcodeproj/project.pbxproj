@@ -68,6 +68,7 @@
 		7E1949DCEBF04E964D8C273B /* Pods_KrazeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2BC2D6341C70A72146DB568 /* Pods_KrazeTests.framework */; };
 		F93F25581EFD0CE000FCC260 /* UI in Resources */ = {isa = PBXBuildFile; fileRef = F93F25571EFD0CE000FCC260 /* UI */; };
 		F951B3231F0BA05000FEC3B8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F951B3221F0BA05000FEC3B8 /* GoogleService-Info.plist */; };
+		F9CBDB1D1F2767DE007B084D /* Tableview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CBDB1C1F2767DE007B084D /* Tableview.swift */; };
 		F9EE6C341EE97BB3000A1C67 /* nexa in Resources */ = {isa = PBXBuildFile; fileRef = F9EE6C331EE97BB3000A1C67 /* nexa */; };
 		F9EE6C361EE97BBE000A1C67 /* Baron Neue in Resources */ = {isa = PBXBuildFile; fileRef = F9EE6C351EE97BBE000A1C67 /* Baron Neue */; };
 		F9EE6C3C1EE98B9A000A1C67 /* CGU.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EE6C3B1EE98B9A000A1C67 /* CGU.swift */; };
@@ -161,6 +162,7 @@
 		F938368F1F0E83B900A05E02 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		F93F25571EFD0CE000FCC260 /* UI */ = {isa = PBXFileReference; lastKnownFileType = folder; path = UI; sourceTree = SOURCE_ROOT; };
 		F951B3221F0BA05000FEC3B8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F9CBDB1C1F2767DE007B084D /* Tableview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tableview.swift; sourceTree = "<group>"; };
 		F9EE6C331EE97BB3000A1C67 /* nexa */ = {isa = PBXFileReference; lastKnownFileType = folder; name = nexa; path = ../../../Downloads/nexa; sourceTree = "<group>"; };
 		F9EE6C351EE97BBE000A1C67 /* Baron Neue */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Baron Neue"; path = "../../../Downloads/Baron Neue"; sourceTree = "<group>"; };
 		F9EE6C3B1EE98B9A000A1C67 /* CGU.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGU.swift; sourceTree = "<group>"; };
@@ -308,6 +310,7 @@
 				5AC292F51E9D21A500AA0E78 /* Connect.swift */,
 				5AC292F91E9FC42800AA0E78 /* CheckBox.swift */,
 				5AC292FB1EA0F6AB00AA0E78 /* MapVC.swift */,
+				F9CBDB1C1F2767DE007B084D /* Tableview.swift */,
 				5A4EFFE91EE04D5600278D13 /* ClusterManager.swift */,
 				5A4EFFEB1EE04D7300278D13 /* MapMarker.swift */,
 				5A4EFFED1EE04D8400278D13 /* MapUtils.swift */,
@@ -694,6 +697,7 @@
 				5A789D991EB214ED00D5B2A6 /* MainVC.swift in Sources */,
 				5AE41F361E97DD060099D348 /* AppDelegate.swift in Sources */,
 				5A621B2F1F13A72200E1303E /* Messaging.swift in Sources */,
+				F9CBDB1D1F2767DE007B084D /* Tableview.swift in Sources */,
 				5AC292F61E9D21A500AA0E78 /* Connect.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

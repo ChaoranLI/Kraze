@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Baron-Neue.otf">
+        <array key="Baron Neue.otf">
             <string>BaronNeue</string>
         </array>
         <array key="SF-Pro-Text-Regular.otf">
@@ -630,7 +630,7 @@
         <scene sceneID="Sxa-ol-KKm">
             <objects>
                 <collectionViewController restorationIdentifier="Messaging" storyboardIdentifier="Messaging" id="AuX-Ll-2eV" customClass="Messaging" customModule="Kraze" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="Z1d-J2-VPb">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="Z1d-J2-VPb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -696,12 +696,47 @@
                     <connections>
                         <segue destination="x5A-eK-AWj" kind="show" identifier="toSettings" id="B6K-Fx-SZz"/>
                         <segue destination="YE3-Sp-Wd7" kind="show" identifier="toEvent" id="J5B-9s-Ywm"/>
+                        <segue destination="l7P-pM-EoZ" kind="show" identifier="seguetoTableView" id="fYd-i0-FpO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QGx-rr-Q5n" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <pinchGestureRecognizer id="diO-z6-SPz"/>
             </objects>
             <point key="canvasLocation" x="1656.8" y="-253.2233883058471"/>
+        </scene>
+        <!--Table View-->
+        <scene sceneID="pj6-pf-XAE">
+            <objects>
+                <tableViewController id="l7P-pM-EoZ" customClass="tableView" customModule="Kraze" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="42" sectionHeaderHeight="28" sectionFooterHeight="28" id="MgM-Jc-zoM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="33" id="GIw-IQ-CY1">
+                                <rect key="frame" x="0.0" y="28" width="375" height="33"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GIw-IQ-CY1" id="kv7-m9-Igq">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="32.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="l7P-pM-EoZ" id="bNj-ju-SMP"/>
+                            <outlet property="delegate" destination="l7P-pM-EoZ" id="JQC-Xc-zVf"/>
+                        </connections>
+                    </tableView>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <segue destination="CO8-aV-oQo" kind="show" identifier="segueBacktoMap" id="IXr-Xu-3nQ"/>
+                        <segue destination="CO8-aV-oQo" kind="show" identifier="seguetoMap" id="Jas-qd-9KR"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Iwx-SG-Tjh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3620" y="-68"/>
         </scene>
     </scenes>
     <resources>
@@ -720,10 +755,10 @@
         <image name="signupDone" width="667" height="375"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="aRz-JR-Fj1"/>
-        <segue reference="Oah-nU-Lqu"/>
-        <segue reference="De9-96-zTR"/>
-        <segue reference="Brn-nZ-2iU"/>
+        <segue reference="Jas-qd-9KR"/>
+        <segue reference="Z8S-rr-bBM"/>
+        <segue reference="xsT-sa-iXA"/>
+        <segue reference="f5g-h0-kEX"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
 </document>
